@@ -1,0 +1,13 @@
+section.container,
+.page-width {
+  position: relative;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10.24px;
+}
+@media (min-width: 1025px) {
+  .global-footer .page-width {
+    max-width: 100%;
+  }
+}
