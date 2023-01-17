@@ -1,26 +1,21 @@
 
 <!doctype html>
 <html lang="en" class="cms_header--logged-out">
-<head>
+  <head>
     <meta charset="utf-8">
-    
-	
-		
 
-<script src="https://www.datadoghq-browser-agent.com/datadog-rum-v3.js" type="text/javascript"></script>
-<script type="text/javascript">;(function(){var production=window.location.hostname.toLowerCase().includes('.fanduel.com');window.DD_RUM&&window.DD_RUM.init({applicationId:'76c04a48-7352-4b5f-9904-4380f2557f01',clientToken:'pubc86a9b9d1ada5c2a81d19f8b02d829b2',site:'datadoghq.com',service:'cms',env:production?'production':'dev',sampleRate:production?10:0,trackInteractions:false,allowedTracingOrigins:[/https:\/\/.*\.fanduel\.com/]});}());</script>
 
-		<script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('template', 'subnav');</script>
-	
-	
+
+
+    <script src="https://www.datadoghq-browser-agent.com/datadog-rum-v3.js"
+      type="text/javascript"></script>
+    <script type="text/javascript">;(function(){var production=window.location.hostname.toLowerCase().includes('.fanduel.com');window.DD_RUM&&window.DD_RUM.init({applicationId:'76c04a48-7352-4b5f-9904-4380f2557f01',clientToken:'pubc86a9b9d1ada5c2a81d19f8b02d829b2',site:'datadoghq.com',service:'cms',env:production?'production':'dev',sampleRate:production?10:0,trackInteractions:false,allowedTracingOrigins:[/https:\/\/.*\.fanduel\.com/]});}());</script>
+    <script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('template', 'subnav');</script>
     <script type="text/javascript">;(function(FD_USER){const user=localStorage.getItem('FD_USER');try{FD_USER.user=JSON.parse(user);FD_USER.user.is_authenticated=true;window.DD_RUM&&window.DD_RUM.setUser({id:FD_USER.user.id})}catch(e){FD_USER.user={id:'anon',email:'anon',is_authenticated:false,};window.DD_RUM&&window.DD_RUM.removeUser();}})(window.FD_USER||(window.FD_USER={}));</script>
-
-    <script type="text/javascript">;(function(FD_USER){const root=document.querySelector('html');if(FD_USER.user.is_authenticated){root.classList.add('cms_header--logged-in');root.classList.remove('cms_header--logged-out');const lobbyUrl='/contests';document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-fd-logo-link]').forEach(anchor=>{anchor.href=lobbyUrl;});});}})(window.FD_USER||(window.FD_USER={user:{is_authenticated:false}}));</script><style type="text/css">.cms_header--logged-in .cms-header__show-logged-out{display:none}.cms_header--logged-out .cms-header__show-logged-in{display:none}@media (max-width:915px){.cms_header--logged-in .primary-nav-list{visibility:hidden;position:fixed;top:102px;left:0;right:0;bottom:0}.cms_header--logged-in .logged-out-user .support-menu-block{position:absolute;left:-999em}}</style>
-
-    
-
-<script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('clientSideHomepage', true);</script>
-<script>
+    <script type="text/javascript">;(function(FD_USER){const root=document.querySelector('html');if(FD_USER.user.is_authenticated){root.classList.add('cms_header--logged-in');root.classList.remove('cms_header--logged-out');const lobbyUrl='/contests';document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-fd-logo-link]').forEach(anchor=>{anchor.href=lobbyUrl;});});}})(window.FD_USER||(window.FD_USER={user:{is_authenticated:false}}));</script><style
+      type="text/css">.cms_header--logged-in .cms-header__show-logged-out{display:none}.cms_header--logged-out .cms-header__show-logged-in{display:none}@media (max-width:915px){.cms_header--logged-in .primary-nav-list{visibility:hidden;position:fixed;top:102px;left:0;right:0;bottom:0}.cms_header--logged-in .logged-out-user .support-menu-block{position:absolute;left:-999em}}</style>
+    <script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('clientSideHomepage', true);</script>
+    <script>
 if (window.location.pathname === '/') {
 	const newLocation = new URL(window.location);
 	newLocation.hash = ''; // We never want to keep the hash information.
@@ -43,46 +38,28 @@ if (window.location.pathname === '/') {
 	window.DD_RUM && window.DD_RUM.addAction('homepageRedirected', { 'redirect': false });
 }
 </script>
-
-
-    <meta name="google-site-verification" content="7bfPVLres-pmKiWuUbGn657RuKrQAPME6CG5Vkr60LI">
+    <meta name="google-site-verification"
+      content="7bfPVLres-pmKiWuUbGn657RuKrQAPME6CG5Vkr60LI">
     <meta property="twitter:account_id" content="4503599629457078" />
-    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
 
-    
-	
-	
-	
-
-
-    
-	
-
-
-    
-        
-          <script type="text/javascript" src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/5c67eb5ddc79.js"></script>
-        
-
-        <script type="text/javascript">;$(document).ready(function(){$(".combo-form-input-group input, .combo-form-input-group select").focus(function(){$(this).parent().addClass("is-active")}).blur(function(){$(this).parent().removeClass("is-active")})
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+      src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/5c67eb5ddc79.js"></script>
+    <script type="text/javascript">;$(document).ready(function(){$(".combo-form-input-group input, .combo-form-input-group select").focus(function(){$(this).parent().addClass("is-active")}).blur(function(){$(this).parent().removeClass("is-active")})
 $(document).ready(function(){$('.tabs').each(function(){var $active;var $content;var $links=$(this).find('a');$active=$links.first().addClass('is-active');$content=$($active.attr('href'));$links.not(':first').each(function(){$($(this).attr('href')).hide();});$(this).on('click','a',function(e){$active.removeClass('is-active');$content.hide();$active=$(this);$content=$($(this).attr('href'));$active.addClass('is-active');$content.show();e.preventDefault();});});});})</script>
-    
+    <script>document.getElementsByTagName('html')[0].className += ' fontloader';</script>
+    <script src="//d2avoc1xjbdrch.cloudfront.net/6.44.2/scripts/fontloader.js"
+      async></script>
 
-    
-        <script>document.getElementsByTagName('html')[0].className += ' fontloader';</script>
-        <script src="//d2avoc1xjbdrch.cloudfront.net/6.44.2/scripts/fontloader.js" async></script>
 
-    
 
-    
-        
-            <!-- START: Optimizely tracking -->
-            <script src="//cdn.optimizely.com/js/3199410082.js"></script>
-            <!-- END: Optimizely tracking -->
-        
-    
+
+
+    <!-- START: Optimizely tracking -->
+    <script src="//cdn.optimizely.com/js/3199410082.js"></script>
+    <!-- END: Optimizely tracking -->
+
+
     <script type="text/javascript">
         (function(){
             
@@ -97,29 +74,37 @@ $(document).ready(function(){$('.tabs').each(function(){var $active;var $content
             p.parentNode.insertBefore(s,p);
         }());
     </script>
-<link rel="stylesheet" href="./auth.css">
+    <link rel="stylesheet" href="./auth.css">
+    <link rel="stylesheet" href="./assets/footer.css">
     <title>
-        
-   login
+
+      login
 
     </title>
 
-    <link rel="shortcut icon" href="https://d17odppiik753x.cloudfront.net/images/global/favicon.3eda1c.ico" />
-    <link rel="apple-touch-icon-precomposed" href="https://d17odppiik753x.cloudfront.net/images/global/apple-touch-icon.1cd957.png" />
-    <link rel="apple-touch-icon" href="https://d17odppiik753x.cloudfront.net/images/global/apple-touch-icon.1cd957.png" />
+    <link rel="shortcut icon"
+      href="https://d17odppiik753x.cloudfront.net/images/global/favicon.3eda1c.ico"
+      />
+    <link rel="apple-touch-icon-precomposed"
+      href="https://d17odppiik753x.cloudfront.net/images/global/apple-touch-icon.1cd957.png"
+      />
+    <link rel="apple-touch-icon"
+      href="https://d17odppiik753x.cloudfront.net/images/global/apple-touch-icon.1cd957.png"
+      />
 
-    
-
-    
-	
-		<link rel="canonical" href="https://www.fanduel.com/privacy"/>
-	
 
 
-    
-        <link rel="stylesheet" href="//d2avoc1xjbdrch.cloudfront.net/6.44.2/styles/desktop.css">
 
-        <style>
+
+    <link rel="canonical" href="https://www.fanduel.com/privacy"/>
+
+
+
+
+    <link rel="stylesheet"
+      href="//d2avoc1xjbdrch.cloudfront.net/6.44.2/styles/desktop.css">
+
+    <style>
             .row {
                 margin-bottom: 20px;
             }
@@ -127,21 +112,18 @@ $(document).ready(function(){$('.tabs').each(function(){var $active;var $content
                 margin-top: 0;
             }
         </style>
-
-        
-    
-
-    
-    <link rel="stylesheet" href="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/css/542b4101cb1c.css" type="text/css" />
-	
-	
-	
-	
+    <link rel="stylesheet"
+      href="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/css/542b4101cb1c.css"
+      type="text/css" />
 
 
-    
-	
-		<style>
+
+
+
+
+
+
+    <style>
     .column-10 h3 {
         font-weight: bold;
         font-size: 18px;
@@ -157,26 +139,22 @@ $(document).ready(function(){$('.tabs').each(function(){var $active;var $content
         display: none;
     }
 </style>
-	
-	
+    <script type="text/javascript"
+      src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/5e95492afa16.js"
+      defer></script>
 
 
-    
-        <script type="text/javascript" src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/5e95492afa16.js" defer></script>
-    
+  </head>
 
-</head>
-
-	<body id="privacy" class='nfl logged-out   ' ontouchstart>
+  <body id="privacy" class='nfl logged-out ' ontouchstart>
 
 
-    
-	
-		
-			<script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('reactPageHeaderDisabled', true);</script>
-			
-<!-- Google Tag Manager Data Layer -->
-<script type="text/javascript">
+
+
+
+    <script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('reactPageHeaderDisabled', true);</script>
+    <!-- Google Tag Manager Data Layer -->
+    <script type="text/javascript">
 	(function(w, l, FD_USER) {
 		w[l] = w[l] || [];
 		w[l].push({
@@ -186,12 +164,13 @@ $(document).ready(function(){$('.tabs').each(function(){var $active;var $content
 		});
 	})(window, 'dataLayer', window.FD_USER)
 </script>
-<!-- End Google Tag Manager Data Layer -->
-<!-- Google Tag Manager -->
-<noscript>
-	<iframe src='//www.googletagmanager.com/ns.html?id=GTM-M8ZL2D' height='0' width='0' style='display:none;visibility:hidden'></iframe>
-</noscript>
-<script type="text/javascript">
+    <!-- End Google Tag Manager Data Layer -->
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe src='//www.googletagmanager.com/ns.html?id=GTM-M8ZL2D' height='0'
+        width='0' style='display:none;visibility:hidden'></iframe>
+    </noscript>
+    <script type="text/javascript">
 	(function(w,d,s,l,i)
 		{w[l]=w[l]||[];
 		w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
@@ -201,171 +180,176 @@ $(document).ready(function(){$('.tabs').each(function(){var $active;var $content
 		f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-M8ZL2D');
 </script>
+    <script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('webview', false);</script>
+    <script>window.DD_RUM && window.DD_RUM.addAction('pageHeaderUsed', { 'react': false });</script>
+    <header class="global-header">
+      <nav class="sportsbook-nav" data-role="global-sportsbook-menu">
+        <ul class="sportsbook-nav-list">
+          <li class="sportsbook-nav-item sportsbook-nav-item--fantasy">
 
-	
+            <span>Fantasy</span>
 
+          </li>
+          <li class="sportsbook-nav-item sportsbook-nav-item--sportsbook">
 
-    
+            <a
+              class="sportsbook-anchor"
+              href="./auth.html"
+              target="_blank">
 
-    
+              <span>Register</span>
 
-    
-	
-		<script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('webview', false);</script>
-		<script>window.DD_RUM && window.DD_RUM.addAction('pageHeaderUsed', { 'react': false });</script>
-		
+              <i class="icon new-window-icon">&#x21d7;</i>
+            </a>
 
-<header class="global-header">
-  <nav class="sportsbook-nav" data-role="global-sportsbook-menu">
-		<ul class="sportsbook-nav-list">
-			<li class="sportsbook-nav-item sportsbook-nav-item--fantasy">
-				
-						<span>Fantasy</span>
-				
-			</li>
-			<li class="sportsbook-nav-item sportsbook-nav-item--sportsbook">
-				
-					<a
-						class="sportsbook-anchor"
-						href="./auth.html"
-						target="_blank"
-					>
-				
-					<span>Register</span>
-				
-						<i class="icon new-window-icon">&#x21d7;</i>
-					</a>
-				
-			</li>
-			<li class="sportsbook-nav-item sportsbook-nav-item--sportsbook">
-				
-					<a
-						class="sportsbook-anchor"
-						href="./contact.html"
-						target="_blank"
-					>
-				
-					<span>Contact us</span>
-				
-						<i class="icon new-window-icon">&#x21d7;</i>
-					</a>
-				
-			</li>
-		</ul>
-	</nav>
-	<div class="global-header-container">
-		
-			
+          </li>
+          <li class="sportsbook-nav-item sportsbook-nav-item--sportsbook">
 
+            <a
+              class="sportsbook-anchor"
+              href="./contact.html"
+              target="_blank">
 
-<section class="logo-container">
-	<a href="/" target="_self" class="header-link" data-fd-logo-link>
-		<span class="logo logo-fanduel">FanDuel</span>
-		<span class="logo logo-tagline">The Leader In One-Day Fantasy Sports</span>
-	</a>
-</section>
+              <span>Contact us</span>
+
+              <i class="icon new-window-icon">&#x21d7;</i>
+            </a>
+
+          </li>
+        </ul>
+      </nav>
+      <div class="global-header-container">
 
 
 
-<nav class="primary-nav cms-header__show-logged-in">
-	<ul class="primary-nav-list" data-role="global-header-menu-content" data-maintab=" " data-renderMode="">
-		<li class="primary-nav-item">
-			<a href="/contests" class="primary-nav-anchor"><span class="link-text">Lobby</span></a>
-		</li>
-		<li class="primary-nav-item">
-			<a href="/upcoming" class="primary-nav-anchor"><span class="link-text">Upcoming</span></a>
-		</li>
-		<li class="primary-nav-item">
-			<a href="/live" class="primary-nav-anchor"><span class="link-text">Live</span></a>
-		</li>
-		<li class="primary-nav-item">
-			<a href="/history" class="primary-nav-anchor"><span class="link-text">History</span></a>
-		</li>
-		<li class="primary-nav-item">
-			<a href="/leagues" class="primary-nav-anchor"><span class="link-text">Friends</span></a>
-		</li>
-		<li class="primary-nav-item">
-			<a href="/research" class="primary-nav-anchor"><span class="link-text">Research</span></a>
-		</li>
-	</ul>
-</nav>
 
-<div class="body__container">
-    <section class="logged-out-user secondary-nav">
-	
-		<div class="support-menu-block secondary-nav-item">
-			<a href="/responsibleplay" target="_self" title="Responsible Play" data-ga-category="Acquisition Engagement" data-ga-action="Clicked Link" data-ga-label="Header Responsible Play"><i class="icon responsible-play">&#xe91d;</i></a>
-		</div>
-		<div class="support-menu-block secondary-nav-item">
-			<a href="/support" target="_self" data-ga-category="Acquisition Engagement" data-ga-action="Clicked Link" data-ga-label="Header Support"><i class="icon help" title="Help">&#xe91c;</i></a>
-		</div>
-	
-
-	<div class="cms-header__show-logged-out">
-		
-			<div class="login-menu-block">
-				
-					<a href="/login?source=Header%20Login" target="_self" class="button mini transparent-bg" data-ga-category="User Engagement" data-ga-action="Clicked CTA" data-ga-label="Header Login">Log in</a>
-				
-			</div>
-		
-
-		
-			<div class="join-menu-block">
-				<a href="/join?source_placement=Header&amp;source=privacy" target="_self" class="button mini primary" title="Join FanDuel" data-ga-category="Acquisition Engagement" data-ga-action="Clicked CTA" data-ga-label="Header Join">Join</a>
-			</div>
-		
-	</div>
-
-	<div class="cms-header__show-logged-in">
-		<div class="join-menu-block">
-			<a href="/account" target="_self" class="button mini primary">My Account</a>
-		</div>
-	</div>
-
-</section>
-</div>
-
-		
-	</div>
-</header>
-
-	
+        <section class="logo-container">
+          <a href="/" target="_self" class="header-link" data-fd-logo-link>
+            <span class="logo logo-fanduel">FanDuel</span>
+            <span class="logo logo-tagline">The Leader In One-Day Fantasy Sports</span>
+          </a>
+        </section>
 
 
-    
-        
-    
 
-    
+        <nav class="primary-nav cms-header__show-logged-in">
+          <ul class="primary-nav-list" data-role="global-header-menu-content"
+            data-maintab=" " data-renderMode="">
+            <li class="primary-nav-item">
+              <a href="/contests" class="primary-nav-anchor"><span
+                  class="link-text">Lobby</span></a>
+            </li>
+            <li class="primary-nav-item">
+              <a href="/upcoming" class="primary-nav-anchor"><span
+                  class="link-text">Upcoming</span></a>
+            </li>
+            <li class="primary-nav-item">
+              <a href="/live" class="primary-nav-anchor"><span
+                  class="link-text">Live</span></a>
+            </li>
+            <li class="primary-nav-item">
+              <a href="/history" class="primary-nav-anchor"><span
+                  class="link-text">History</span></a>
+            </li>
+            <li class="primary-nav-item">
+              <a href="/leagues" class="primary-nav-anchor"><span
+                  class="link-text">Friends</span></a>
+            </li>
+            <li class="primary-nav-item">
+              <a href="/research" class="primary-nav-anchor"><span
+                  class="link-text">Research</span></a>
+            </li>
+          </ul>
+        </nav>
 
-    
-<section class="wrapper">
-    <div class="form signup">
-      <header>Signup</header>
-      <form action="#">
-        <input type="text" placeholder="Full name" required />
-        <input type="text" placeholder="Email address" required />
-        <input type="password" placeholder="Password" required />
-        <div class="checkbox">
-          <input type="checkbox" id="signupCheck" />
-          <label for="signupCheck">I accept all terms & conditions</label>
+        <div class="body__container">
+          <section class="logged-out-user secondary-nav">
+
+            <div class="support-menu-block secondary-nav-item">
+              <a href="/responsibleplay" target="_self" title="Responsible Play"
+                data-ga-category="Acquisition Engagement"
+                data-ga-action="Clicked Link" data-ga-label="Header Responsible
+                Play"><i class="icon responsible-play">&#xe91d;</i></a>
+            </div>
+            <div class="support-menu-block secondary-nav-item">
+              <a href="/support" target="_self" data-ga-category="Acquisition
+                Engagement" data-ga-action="Clicked Link" data-ga-label="Header
+                Support"><i class="icon help" title="Help">&#xe91c;</i></a>
+            </div>
+
+
+            <div class="cms-header__show-logged-out">
+
+              <div class="login-menu-block">
+
+                <a href="/login?source=Header%20Login" target="_self"
+                  class="button mini transparent-bg" data-ga-category="User
+                  Engagement" data-ga-action="Clicked CTA" data-ga-label="Header
+                  Login">Log in</a>
+
+              </div>
+
+
+
+              <div class="join-menu-block">
+                <a href="/join?source_placement=Header&amp;source=privacy"
+                  target="_self" class="button mini primary" title="Join
+                  FanDuel" data-ga-category="Acquisition Engagement"
+                  data-ga-action="Clicked CTA" data-ga-label="Header Join">Join</a>
+              </div>
+
+            </div>
+
+            <div class="cms-header__show-logged-in">
+              <div class="join-menu-block">
+                <a href="/account" target="_self" class="button mini primary">My
+                  Account</a>
+              </div>
+            </div>
+
+          </section>
         </div>
-        <input type="submit" value="Signup" />
-      </form>
-    </div>
 
-    <div class="form login">
-      <header>Login</header>
-      <form action="#">
-        <input type="text" placeholder="Email address" required />
-        <input type="password" placeholder="Password" required />
-        <a href="#">Forgot password?</a>
-        <input type="submit" value="Login" />
-      </form>
-    </div>
 
-    <script>
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Signup</header>
+        <form action="#">
+          <input type="text" placeholder="Full name" required />
+          <input type="text" placeholder="Email address" required />
+          <input type="password" placeholder="Password" required />
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck">I accept all terms & conditions</label>
+          </div>
+          <input type="submit" value="Signup" />
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form action="#">
+          <input type="text" placeholder="Email address" required />
+          <input type="password" placeholder="Password" required />
+          <a href="#">Forgot password?</a>
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+
+      <script>
       const wrapper = document.querySelector(".wrapper"),
         signupHeader = document.querySelector(".signup header"),
         loginHeader = document.querySelector(".login header");
@@ -377,207 +361,80 @@ $(document).ready(function(){$('.tabs').each(function(){var $active;var $content
         wrapper.classList.remove("active");
       });
     </script>
-  </section>
-    
-
-    
-
-    
-	
-		<footer class="global-footer">
-  <div class="footer-shared page-width">
-    <section class="footer-links">
-      <ul class="footer-links-list">
-        <li class="title">About</li>
-        <li><a href="https://www.fanduel.com/support" target="_self">Support</a></li>
-        <li><a href="https://www.fanduel.com/about" target="_self">About FanDuel</a></li>
-        <li><a href="https://www.fanduel.com/whats-new-nfl" target="_self">What's New</a></li>
-        <li><a href="https://www.fanduel.com/how-it-works" target="_self">How It Works</a></li>
-        <li><a href="https://www.fanduel.com/rules" target="_self">Rules &amp; Scoring</a></li>
-        <li><a href="https://www.fanduel.com/responsible-play" target="_self">Responsible Play</a></li>
-        <li><a href="https://www.flutter.com/operating-responsibly/modern-slavery-statement" target="_self">Modern Slavery Statement</a></li>
-        <li><a href="https://www.fanduel.com/legal-sports-betting-us-map" target="_self">Legal Sports Betting Map</a></li>
-        <li><a href="https://www.fanduel.com/partners" target="_self">Affiliates</a></li>
-        <li><a href="https://www.fanduel.com/promos" target="_self">Promotions</a></li>
-
-        <li class="title">FanDuel Apps</li>
-        <li><a href="https://itunes.apple.com/us/app/fanduel-fantasy-football/id599664106?mt=8" target="_self">Fantasy (iOS)</a></li>
-        <li><a href="https://www.fanduel.com/android" target="_self">Sportsbook & Fantasy (Android)</a></li>
-        <li><a href="https://itunes.apple.com/us/app/fanduel-sportsbook/id1413721906?mt=8" target="_self">Sportsbook (iOS)</a></li>
-        <li><a href="https://www.fanduel.com/android" target="_self">Sportsbook (Android)</a></li>
-      </ul>
-
-      <ul class="footer-links-list">
-        <li class="title">Sportsbook Odds</li>
-        <li><a href="https://sportsbook.fanduel.com/navigation/nba" target="_self">NBA Odds</a></li>
-        <li><a href="https://sportsbook.fanduel.com/navigation/nfl" target="_self">NFL Odds</a><li>
-        <li><a href="https://sportsbook.fanduel.com/navigation/mlb" target="_self">MLB Odds</a></li>
-        <li><a href="https://sportsbook.fanduel.com/golf" target="_self">Golf Odds</a></li>
-        <li><a href="https://sportsbook.fanduel.com/mma" target="_self">UFC Odds</a></li>
-        <li><a href="https://sportsbook.fanduel.com/navigation/ncaaf" target="_self">College Football Odds</a></li>
-        <li><a href="https://sportsbook.fanduel.com/navigation/ncaab" target="_self">College Basketball Odds</a></li>
-        <li><a href="https://sportsbook.fanduel.com/soccer" target="_self">Soccer Odds</a></li>
-        <li><a href="https://sportsbook.fanduel.com/motorsport" target="_self">NASCAR Odds</a></li>
-        <li><a href="https://sportsbook.fanduel.com/navigation/nhl" target="_self">NHL Odds</a></li>
-        <li><a href="https://sportsbook.fanduel.com/navigation/nfl?tab=super-bowl" target="_self">Super Bowl 57 Odds</a></li>
-        <li><a href="https://sportsbook.fanduel.com/navigation/mlb?tab=world-series" target="_self">2022 World Series Odds</a></li>
-        <li><a href="https://sportsbook.fanduel.com/navigation/ncaaf?tab=national-championship" target="_self">2022 CFB Playoff National Championship Odds</a></li>
-
-        <li class="title">NFL Sportsbook Betting</li>
-        <li><a href="https://www.fanduel.com/best-promo-code" target="_self">2022 Best FanDuel Sportsbook Promos</a></li>
-        <li><a href="https://www.fanduel.com/sbk/nfl-betting" target="_self">NFL Betting</a></li>
-        <li><a href="https://www.fanduel.com/nfl-betting-promos" target="_self">NFL Sportsbook Betting Promos</a></li>
-        <li><a href="https://www.fanduel.com/sbk/nfl-picks" target="_self">NFL Picks</a></li>
-        <li><a href="https://www.fanduel.com/sbk/nfl-power-rankings" target="_self">2022 NFL Team Power Rankings</a></li>
-        <li><a href="https://sportsbook.fanduel.com/teams/nfl/teams" target="_self">NFL Team Schedules & Odds</a></li>
-        <li><a href="https://numberfire.com/odds" target="_self">OddsFire - Compare Betting Odds</a></li>
-      </ul>
-
-      <ul class="footer-links-list">
-        <li class="title">FanDuel Sports Betting States</li>
-        <li><a href="https://www.fanduel.com/sportsbook-az" target="_self">FanDuel Sportsbook AZ</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-co" target="_self">FanDuel Sportsbook CO</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-ct" target="_self">FanDuel Sportsbook CT</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-ia" target="_self">FanDuel Sportsbook IA</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-il" target="_self">FanDuel Sportsbook IL</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-in" target="_self">FanDuel Sportsbook IN</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-la" target="_self">FanDuel Sportsbook LA</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-mi" target="_self">FanDuel Sportsbook MI</a></li>
-        <li><a href="https://sportsbook.fanduel.com/" target="_self">FanDuel Sportsbook NJ</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-ny" target="_self">FanDuel Sportsbook NY</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-pa" target="_self">FanDuel Sportsbook PA</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-tn" target="_self">FanDuel Sportsbook TN</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-va" target="_self">FanDuel Sportsbook VA</a></li>
-        <li><a href="https://www.fanduel.com/sportsbook-wv" target="_self">FanDuel Sportsbook WV</a></li>
-      </ul>
-
-      <ul class="footer-links-list">
-
-        <li class="title">FanDuel News</li>
-        <li><a href="https://www.fanduel.com/theduel/ufc" target="_self">UFC</a></li>
-        <li><a href="https://www.fanduel.com/theduel/soccer" target="_self">Soccer</a></li>
-        <li><a href="https://www.fanduel.com/theduel/news-rumors/nfl" target="_self">NFL</a></li>
-        <li><a href="https://www.fanduel.com/theduel/fantasy/nfl" target="_self">NFL Fantasy</a></li>
-        <li><a href="https://www.fanduel.com/theduel/videos" target="_self">Videos</a></li>
-        <li><a href="https://www.fanduel.com/theduel/casino" target="_self">Casino</a></li>
-        <li><a href="https://www.fanduel.com/theduel/fantasy/nba" target="_self">NBA</a></li>
-        <li><a href="https://www.fanduel.com/theduel/sports-betting/ncaab" target="_self">College Basketball</a></li>
-        <li><a href="https://www.fanduel.com/theduel/sports-betting/nhl" target="_self">NHL</a></li>
-
-        <li class="title">FanDuel Casino</li>
-        <li><a href="https://casino.fanduel.com/c/slots" target="_self">Online Slots</a></li>
-        <li><a href="https://casino.fanduel.com/c/new" target="_self">New Casino Games</a><li>
-        <li><a href="https://casino.fanduel.com/c/blackjack" target="_self">Blackjack Online</a></li>
-        <li><a href="https://casino.fanduel.com/c/livecasino" target="_self">Live Dealer Casino</a></li>
-        <li><a href="https://casino.fanduel.com/c/roulette" target="_self">Online Roulette</a></li>
-        <li><a href="https://casino.fanduel.com/c/table" target="_self">Online Table Games</a></li>
-        <li><a href="https://casino.fanduel.com/promotions" target="_self">FanDuel Casino Promo Codes</a></li>
-      </ul>
-
-      <ul class="footer-links-list">
-        <li class="title">FanDuel Group Products</li>
-        <li><a href="https://sportsbook.fanduel.com/" target="_self">FanDuel Sportsbook</a></li>
-        <li><a href="https://www.fanduel.com/theduel" target="_self">The Duel</a></li>
-        <li><a href="https://www.tvg.com/" target="_self">TVG</a></li>
-        <li><a href="https://casino.fanduel.com/" target="_self">FanDuel Casino</a></li>
-        <li><a href="https://www.stardustcasino.com/" target="_self">StarDust Casino</a></li>
-        <li><a href="https://racing.fanduel.com" target="_self">FanDuel Racing</a></li>
-        <li><a href="https://numberfire.com/" target="_self">numberFire - Fantasy Sports Projections</a></li>
-        <li><a href="https://www.fanduel.com/faceoff" target="_self">FanDuel Faceoff</a></li>
-
-        <li class="title">Follow FanDuel</li>
-        <li><a href="https://facebook.com/fanduel" target="_blank" rel="external noopener noreferrer">Facebook</a></li>
-        <li><a href="https://twitter.com/FanDuel" target="_blank" rel="external noopener noreferrer">Twitter</a></li>
-        <li><a href="https://www.instagram.com/FanDuel/" target="_blank" rel="external noopener noreferrer">Instagram</a></li>
-        <li><a href="https://www.youtube.com/channel/UCbPP6F-3ASqkBkT9Obro-TQ" target="_blank" rel="external noopener noreferrer">YouTube</a></li>
-        <li><a href="https://www.snapchat.com/add/fanduel" target="_blank" rel="external noopener noreferrer">Snapchat</a></li>
-      </ul>
-
-      <ul class="footer-links-list">
-        <li class="title">Fantasy Sports</li>
-        <li><a href="https://www.fanduel.com/fantasy-football" target="_self">NFL</a></li>
-        <li><a href="https://www.fanduel.com/fantasy-basketball" target="_self">NBA</a></li>
-        <li><a href="https://www.fanduel.com/fantasy-hockey" target="_self">NHL</a></li>
-        <li><a href="https://www.fanduel.com/fantasy-baseball" target="_self">MLB</a></li>
-        <li><a href="https://www.fanduel.com/soccer" target="_self">Soccer</a></li>
-        <li>
-          <a href="https://www.fanduel.com/college-football-training-guide" target="_self">CFB</a>
-        </li>
-        <li><a href="https://www.fanduel.com/fantasy-golf" target="_self">Golf</a></li>
-        <li><a href="https://www.fanduel.com/tennis-guide" target="_self">Tennis</a></li>
-        <li><a href="https://www.fanduel.com/fantasy-nascar" target="_self">NASCAR</a></li>
-        <li><a href="https://www.fanduel.com/fantasy-wnba" target="_self">WNBA</a></li>
-        <li>
-          <a href="https://www.fanduel.com/college-basketball-training-guide" target="_self">CBB</a>
-        </li>
-      </ul>
-
     </section>
-  </div>
-
-  <div class="global-footer">
-    <section class="footer-shared page-width">
-      <ul class="footer-links-list footer-links-list--linear">
-        <li><a href="/careers" target="_self">Careers</a></li>
-        <li><a href="/legal" target="_self">Governance</a></li>
-        <li><a href="/trust" target="_self">Trust &amp; Safety</a></li>
-        <li><a href="/bill-of-rights" target="_self">Bill of Rights</a></li>
-        <li><a href="/security" target="_self">Security</a></li>
-        <li><a href="/privacy" target="_self">Privacy Policy</a></li>
-        <li><a href="/privacy#privacy_section_9" target="_self">California Privacy Rights</a></li>
-        <li><a href="/terms" target="_self">Terms of Use</a></li>
-        <li><a href="https://fanduelgroup.formstack.com/forms/ccpa_dfs_opt_out" target="_blank" rel="external noopener noreferrer">Do Not Sell My Personal Information</a></li>
-        <li><a href="https://www.flutter.com/operating-responsibly/modern-slavery-statement" target="_blank" rel="external noopener noreferrer">Modern Slavery Statement</a></li>
-        <li><a href="/press" target="_self">Press &amp; Media</a></li>
-      </ul>
-    </section>
-  </div>
-
-  <section class="page-width footer-tertiary">
-    <ul class="footer-partners">
-      <li><span class="icon icon-nbc-sports">NBC Sports Official Partner</span></li>
-      <li><a href="http://www.stats.com/" target="_blank" rel="external noopener noreferrer"><span class="icon icon-stats">Stats</span></a></li>
-      <li><a href="http://www.fsta.org/" target="_blank" rel="external noopener noreferrer"><span class="icon icon-fsta">FSTA</span></a></li>
-      <li><span class="icon icon-paypal">PayPal</span></li>
-      <li><span class="icon icon-visa">Visa</span></li>
-      <li><span class="icon icon-discover">Discover Network</span></li>
-      <li><span class="icon icon-mastercard">Mastercard</span></li>
-      <li><span class="icon icon-play-plus">Play+</span></li>
-      
-    </ul>
-
-    <div class="footer-copyright-links">
-      <ul>
-        <li><span class="footer-copyright-notice">&copy; 2009-2021. All Rights Reserved</span>
-        </li>
-        <li>
-          <span class="footer-company-location">
-            <span class="footer-company-title">FanDuel Group</span>
-            <span> New York, N.Y</span>
-          </span>
-        </li>
-        <li><a href="#top" class="footer-back-to-top">Back to top</a></li>
-      </ul>
-    </div>
-  </section>
-</footer>
-
-	
 
 
-    
-
-    
-    
 
 
-    
-
-    
-	<script type="text/javascript" src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/e7d377166810.js"></script>
 
 
-    
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>balldraft is an online betting manager situated in making the
+              best out of the soccer game and giving you maximum satisfaction</p>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="text"> <a href="./contact.html">Contact us</a>
+              </div>
+              <div class="phone">
 
-</body>
-</html>
+                <span class="text"> <a href="./privacy.html">privacy policy</a>
+                </div>
+                <div class="email">
+
+                  <span class="text"> <a href="./faq.html">faqs</a>
+                  </span>
+                </div>
+                <div class="email">
+
+                  <span class="text"> <a href="./auth">Register</a>
+                  </span>
+                </div>
+
+              </div>
+            </div>
+            <div class="right box">
+              <h2>Contact us</h2>
+              <div class="content">
+                <form action="#">
+                  <div class="email">
+                    <div class="text">Email *</div>
+                    <input type="email" required>
+                  </div>
+                  <div class="msg">
+                    <div class="text">Message *</div>
+                    <textarea rows="2" cols="25" required></textarea>
+                  </div>
+                  <div class="btn">
+                    <button type="submit">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <center>
+              <span class="far fa-copyright"></span><span> 2023 All rights
+                reserved.</span>
+            </center>
+          </div>
+        </footer>
+
+
+
+
+
+
+
+
+        <script type="text/javascript"
+          src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/e7d377166810.js"></script>
+      </body>
+    </html>
