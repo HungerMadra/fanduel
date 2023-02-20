@@ -1,4 +1,20 @@
-body{
+/* The page is NOT responsive. You can implement responsiveness yourself if you wanna have some fun 😃 */
+
+:root {
+    --color-primary: #1f375b;
+    --color-secondary: #1493ff;
+    --color-tertiary: #ff585f;
+    --color-primary-darker: #4bbb7d;
+    --color-secondary-darker: #ffbb00;
+    --color-tertiary-darker: #fd424b;
+    --color-primary-opacity: #5ec5763a;
+    --color-secondary-opacity: #ffcd0331;
+    --color-tertiary-opacity: #ff58602d;
+    --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+    --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+  }
+  
+  body{
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -20,27 +36,34 @@ header{
     flex-flow: column wrap;
     
 }
-header a{
+
+  
+  header a{
     color: white;
 }
 
 .top__nav{
 height: 40%;
+margin: 0;
 }
 .btm__nav{
     height: 60%;
 }
 .top__nav{
-    background-color:#1f375b;
+    background-color:var(--color-primary);
 }
 
-.top__nav,.btm__nav{
-    padding-left: 2rem;
+.top__nav,.primary-nav-list__btm{
+    padding-left: 2.5rem;
 
 }
 
 .btm__nav{
-    background-color: #1493ff;
+    background-color: var(--color-secondary);
+}
+.primary-nav-list__btm{
+    background-color: var(--color-secondary);
+
 }
 .top__nav li a{
     letter-spacing: 2.5px;
@@ -100,6 +123,76 @@ ul{
 
 }
 
-.show__line{
+.primary-nav-item__active{
     visibility:visible;
 }
+
+
+  
+  
+  .btn {
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 500;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .btn  a{
+    color: #fff;
+
+  }
+  
+  
+  p {
+    color: #666;
+  }
+  
+  
+  
+  /* nav and stickly class at the same time */
+  
+  
+  /* OPERATIONS */
+  .operations {
+    background-color: #fff;
+  }
+  
+  
+  .operations__content {
+    display: none;
+  
+    /* JUST PRESENTATIONAL */
+    font-size: 1.7rem;
+  }
+  
+  .operations__content--active {
+    display: flex;
+   
+  }
+  
+ 
+ 
+ 
+  
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
