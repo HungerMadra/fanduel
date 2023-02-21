@@ -367,6 +367,7 @@ ul{
       text-align: center;
       color: white;
       height:80vh;
+      margin: 0 1rem;
   }
 
   .slider--left__container,
@@ -387,6 +388,11 @@ ul{
   
   #section--3{
     position: relative;
+  }
+  .profile{
+    padding-top:1rem ;
+    padding-bottom:1rem ;
+    padding-left: 1.3rem;
   }
   .entry{
     display: grid;
@@ -409,5 +415,14 @@ ul{
 
   }
 
+  .profile__img{
+    height:2rem;
+    width: 2rem;
+    border-radius: 50%;
+  }
 
-
+  .profile__section{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
