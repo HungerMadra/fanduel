@@ -139,8 +139,15 @@ slider();
 
 
 
+// upcoming
+
+const entriesDraft=document.querySelectorAll('.entries__drafts li')
 
 
+
+entriesDraft.forEach(e=>{
+console.log(e)
+})
 
 
 
