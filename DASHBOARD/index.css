@@ -17,6 +17,7 @@
   body{
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
 }
 
 html{
@@ -165,6 +166,7 @@ ul{
     padding:1rem 1rem 0 1rem;
     /* JUST PRESENTATIONAL */
     font-size: 1.7rem;
+    width: 100%;
   }
   .operations__tab{
     border-bottom: 1px solid transparent;
@@ -529,3 +531,13 @@ ul{
     margin: 1rem;
   }
    */
+
+
+   .entry--active{
+     border-bottom: 1px solid #1493ff;
+   }
+
+
+
+
+   
