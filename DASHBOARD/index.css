@@ -496,10 +496,14 @@ ul{
   }
   .draft__dropdown--active{
     display: block;
+    transition: all 0.3s;
+
   }
 
   .entries__display--active{
     display: flex;
+    transition: all 0.3s;
+
   }
 
 
@@ -545,6 +549,8 @@ ul{
 
    .entry--active{
      border-bottom: 3px solid #1493ff;
+    transition: all 0.3s;
+
    }
 
 
