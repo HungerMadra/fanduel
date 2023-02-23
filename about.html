@@ -1,0 +1,741 @@
+
+<!doctype html>
+<html lang="en" class="cms_header--logged-out">
+<head>
+    <meta charset="utf-8">
+    
+	
+		
+
+<script src="https://www.datadoghq-browser-agent.com/datadog-rum-v3.js" type="text/javascript"></script>
+<script type="text/javascript">;(function(){var production=window.location.hostname.toLowerCase().includes('.fanduel.com');window.DD_RUM&&window.DD_RUM.init({applicationId:'76c04a48-7352-4b5f-9904-4380f2557f01',clientToken:'pubc86a9b9d1ada5c2a81d19f8b02d829b2',site:'datadoghq.com',service:'cms',env:production?'production':'dev',sampleRate:production?10:0,trackInteractions:false,allowedTracingOrigins:[/https:\/\/.*\.fanduel\.com/]});}());</script>
+
+		<script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('template', 'about_2015');</script>
+	
+	
+    <script type="text/javascript">;(function(FD_USER){const user=localStorage.getItem('FD_USER');try{FD_USER.user=JSON.parse(user);FD_USER.user.is_authenticated=true;window.DD_RUM&&window.DD_RUM.setUser({id:FD_USER.user.id})}catch(e){FD_USER.user={id:'anon',email:'anon',is_authenticated:false,};window.DD_RUM&&window.DD_RUM.removeUser();}})(window.FD_USER||(window.FD_USER={}));</script>
+
+    <script type="text/javascript">;(function(FD_USER){const root=document.querySelector('html');if(FD_USER.user.is_authenticated){root.classList.add('cms_header--logged-in');root.classList.remove('cms_header--logged-out');const lobbyUrl='/contests';document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-fd-logo-link]').forEach(anchor=>{anchor.href=lobbyUrl;});});}})(window.FD_USER||(window.FD_USER={user:{is_authenticated:false}}));</script><style type="text/css">.cms_header--logged-in .cms-header__show-logged-out{display:none}.cms_header--logged-out .cms-header__show-logged-in{display:none}@media (max-width:915px){.cms_header--logged-in .primary-nav-list{visibility:hidden;position:fixed;top:102px;left:0;right:0;bottom:0}.cms_header--logged-in .logged-out-user .support-menu-block{position:absolute;left:-999em}}</style>
+
+    
+
+<script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('clientSideHomepage', true);</script>
+<script>
+if (window.location.pathname === '/') {
+	const newLocation = new URL(window.location);
+	newLocation.hash = ''; // We never want to keep the hash information.
+
+	const searchParams = new URLSearchParams(window.location.search);
+	searchParams.forEach((value, key) => {
+		if (key.toLowerCase() === 'invitedby') {
+			newLocation.pathname = '/referral';
+			window.DD_RUM && window.DD_RUM.addAction('homepageRedirected', { 'redirect': true, 'href': newLocation.href });
+			window.location.replace(newLocation.href);
+		}
+	});
+
+	if (FD_USER.user.is_authenticated) {
+		newLocation.pathname = '/contests';
+		newLocation.search = '';
+		window.DD_RUM && window.DD_RUM.addAction('homepageRedirected', { 'redirect': true, 'href': newLocation.href });
+		window.location.replace(newLocation.href);
+	}
+	window.DD_RUM && window.DD_RUM.addAction('homepageRedirected', { 'redirect': false });
+}
+</script>
+
+
+    <meta name="google-site-verification" content="7bfPVLres-pmKiWuUbGn657RuKrQAPME6CG5Vkr60LI">
+    <meta property="twitter:account_id" content="4503599629457078" />
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    
+	
+		<meta name="description" content="FanDuel has redefined fantasy sports in pursuit of its mission of making sports more exciting. FanDuel offers a multitude of one-day, weekly and season-long game options for NFL, NBA, MLB, NHL, Golf, WNBA, the EPL, Champions League, and XFL!">
+	
+	
+	
+
+
+    
+	
+
+
+    
+        
+          <script type="text/javascript" src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/5c67eb5ddc79.js"></script>
+        
+
+        <script type="text/javascript">;$(document).ready(function(){$(".combo-form-input-group input, .combo-form-input-group select").focus(function(){$(this).parent().addClass("is-active")}).blur(function(){$(this).parent().removeClass("is-active")})
+$(document).ready(function(){$('.tabs').each(function(){var $active;var $content;var $links=$(this).find('a');$active=$links.first().addClass('is-active');$content=$($active.attr('href'));$links.not(':first').each(function(){$($(this).attr('href')).hide();});$(this).on('click','a',function(e){$active.removeClass('is-active');$content.hide();$active=$(this);$content=$($(this).attr('href'));$active.addClass('is-active');$content.show();e.preventDefault();});});});})</script>
+    
+
+    
+        <script>document.getElementsByTagName('html')[0].className += ' fontloader';</script>
+        <script src="//d2avoc1xjbdrch.cloudfront.net/6.44.2/scripts/fontloader.js" async></script>
+
+    
+
+    
+        
+            <!-- START: Optimizely tracking -->
+            <script src="//cdn.optimizely.com/js/3199410082.js"></script>
+            <!-- END: Optimizely tracking -->
+        
+    
+    <script type="text/javascript">
+        (function(){
+            
+            var pxId = 'JMCVuBG8';
+            
+
+            window._pxAppId = `PX${pxId}`;
+            var p = document.getElementsByTagName('script')[0],
+                s = document.createElement('script');
+            s.async = 1;
+            s.src = `/${pxId}/init.js`;
+            p.parentNode.insertBefore(s,p);
+        }());
+    </script>
+
+    <title>
+        
+	About
+
+    </title>
+
+    <link rel="shortcut icon" href="https://d17odppiik753x.cloudfront.net/images/global/favicon.3eda1c.ico" />
+    <link rel="apple-touch-icon-precomposed" href="https://d17odppiik753x.cloudfront.net/images/global/apple-touch-icon.1cd957.png" />
+    <link rel="apple-touch-icon" href="https://d17odppiik753x.cloudfront.net/images/global/apple-touch-icon.1cd957.png" />
+
+    
+
+    
+	
+		<link rel="canonical" href="https://www.fanduel.com/about"/>
+	
+
+
+    
+        <link rel="stylesheet" href="./assets/desktop.css">
+
+        <style>
+            .row {
+                margin-bottom: 20px;
+            }
+            .row + .row {
+                margin-top: 0;
+            }
+        </style>
+
+        
+    
+
+    
+
+    <link rel="stylesheet" href="./assets/340.css">
+    <link rel="stylesheet" href="./assets/about.css">
+	<!-- <link rel="stylesheet" href="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/css/34070d5c54da.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/css/f9b88f001291.css" type="text/css" /> -->
+	<style>
+		.awards {
+			background: url();
+			background-position: center bottom;
+			background-color: #a6a9ae;
+			background-repeat: no-repeat;
+		}
+
+		.numbers {
+			background: url(https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/number-background-002.jpg);
+			background-position: left top;
+		}
+
+		.sports {
+			background: url(https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/sport-background-002.jpg);
+			background-position: top center;
+		}
+
+		.hero-image, .awards, .numbers, .sports {
+			background-size: cover;
+			background-color: #2d2d2d;
+		}
+	</style>
+	<style>
+.global-footer {
+margin-top: 0;
+}
+.investors {
+display: none !important;
+}
+.investor-list .column-3:nth-child(9) {
+    display: none;
+}
+
+li.column-4.card {
+    margin: 1.5%;
+    padding: 0;
+    line-height: 0;
+}
+
+.numbers li:nth-child(4) {
+    display: none;
+}
+.numbers li {
+width: 33%;
+}
+.numbers {
+border-bottom: 2px solid #1493ff;
+}
+.card {
+width: 22%;
+}
+.card_content {
+    top: 74%;
+}
+.sports-icons .column-spacer-2 {
+    margin-left: 9.66667%;
+}
+
+@media (max-width: 640px) {
+   .sports-icons .column-spacer-2 {
+    margin-left: 0;
+}
+}
+</style><script>
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelector('.team').style.display = 'none';
+  document.querySelector('.how-it-works').style.display = 'none';
+});
+</script>
+
+
+    
+        <script type="text/javascript" src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/5e95492afa16.js" defer></script>
+    
+		<link rel="stylesheet" href="./assets/footer.css">
+</head>
+
+	<body id="about" class='
+	use-proxima-nova
+ logged-out   ' ontouchstart>
+
+
+    
+	
+		
+			<script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('reactPageHeaderDisabled', true);</script>
+			
+<!-- Google Tag Manager Data Layer -->
+<script type="text/javascript">
+	(function(w, l, FD_USER) {
+		w[l] = w[l] || [];
+		w[l].push({
+			userid: FD_USER.user.id,
+			useremail: FD_USER.user.email,
+			product: 'fantasy'
+		});
+	})(window, 'dataLayer', window.FD_USER)
+</script>
+<!-- End Google Tag Manager Data Layer -->
+<!-- Google Tag Manager -->
+<noscript>
+	<iframe src='//www.googletagmanager.com/ns.html?id=GTM-M8ZL2D' height='0' width='0' style='display:none;visibility:hidden'></iframe>
+</noscript>
+<script type="text/javascript">
+	(function(w,d,s,l,i)
+		{w[l]=w[l]||[];
+		w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+		var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+		j.async=true;
+		j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;
+		f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-M8ZL2D');
+</script>
+
+	
+
+
+    
+
+    
+
+    
+	
+		<script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('webview', false);</script>
+		<script>window.DD_RUM && window.DD_RUM.addAction('pageHeaderUsed', { 'react': false });</script>
+		
+
+<header class="global-header">
+	<nav class="sportsbook-nav" data-role="global-sportsbook-menu">
+		<ul class="sportsbook-nav-list">
+			<li class="sportsbook-nav-item sportsbook-nav-item--fantasy">
+				
+						<span>Fantasy</span>
+				
+			</li>
+			<li class="sportsbook-nav-item sportsbook-nav-item--sportsbook">
+				
+					<a
+						class="sportsbook-anchor"
+						href="./auth.html"
+						target="_blank"
+					>
+				
+					<span>Register</span>
+				
+						<i class="icon new-window-icon">&#x21d7;</i>
+					</a>
+				
+			</li>
+			<li class="sportsbook-nav-item sportsbook-nav-item--sportsbook">
+				
+					<a
+						class="sportsbook-anchor"
+						href="./contact.html"
+						target="_blank"
+					>
+				
+					<span>Contact us</span>
+				
+						<i class="icon new-window-icon">&#x21d7;</i>
+					</a>
+				
+			</li>
+		</ul>
+	</nav>
+	<div class="global-header-container">
+		
+			
+
+
+<section class="logo-container">
+	<a href="/" target="_self" class="header-link" data-fd-logo-link>
+		<span class="logo logo-fanduel">FanDuel</span>
+		<span class="logo logo-tagline">The Leader In One-Day Fantasy Sports</span>
+	</a>
+</section>
+
+
+<section class="logged-out-user secondary-nav">
+	
+	
+		<div class="support-menu-block secondary-nav-item">
+			<a href="./contact.html" target="_self" data-ga-category="Acquisition Engagement" data-ga-action="Clicked Link" data-ga-label="Header Support"><i class="icon help" title="Help">&#xe91c;</i></a>
+		</div>
+	
+
+	<div class="cms-header__show-logged-out">
+		
+		
+		
+
+		
+			<div class="join-menu-block">
+				<a href="./auth.html" target="_self" class="button mini primary" title="Join FanDuel" data-ga-category="Acquisition Engagement" data-ga-action="Clicked CTA" data-ga-label="Header Join">Join</a>
+			</div>
+		
+	</div>
+
+</section>
+
+		
+	</div>
+</header>
+
+	
+
+
+    
+        
+    
+
+    
+
+    
+<link rel="stylesheet" type="text/css" href="//s3.amazonaws.com/cms.fanduel.com/djangoweb-7777025-b688/cms_static/css/templates/sub_nav_2015.css">
+
+<span class="about ">
+	<section class="hero-image">
+		<div class="page-width clearfix">
+			<img class="hero-line" src="https://d17odppiik753x.cloudfront.net/about-us/2016/hero-line-01.svg">
+		</div>
+	</section>
+	<section class="history clearfix">
+		<div class="page-width">
+			<div class="column-5">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/about-us/2016/polaroid.jpg">
+			</div>
+			<div class="column-spacer-1 column-6">
+				<h4>The premier gaming destination in the United States</h4>
+				<p>What started as a backyard Texas brainstorm between 5 co-founders is now the driving force in a multibillion-dollar industry. FanDuel got its start at the 2009 SXSW Interactive festival — right there in that backyard — when our founding team decided to focus their efforts on changing the game in fantasy sports. 
+<br><br>
+The season-long game would be simplified. The winning amplified. The money real. And the result? A new way to play fantasy — fan vs. fan in a test of sports knowledge and fantasy knowhow — where winners can taste victory on any given day. Not just once a year.</p>
+			</div>
+		</div>
+	</section>
+	<section class="how-it-works clearfix">
+		<div class="page-width clearfix">
+			<h4>How does FanDuel work?</h4>
+			<p>It's very simple</p>
+			<div class="column-4">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/about-us/2016/trophy.svg" />
+				<p><b>1. Choose a contest.</b>
+				<br>Play for cash or for fun.</p>
+			</div>
+			<div class="column-4">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/about-us/2016/player.svg" />
+				<p><b>2. Pick your players. </b>
+				<br>Just stay under the salary cap.</p>
+			</div>
+			<div class="column-4">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/about-us/2016/live.svg" />
+				<p><b>3. Watch and win.</b>
+				<br>Top scores win when games end.</p>
+			</div>
+			<div class="row column-spacer-4 column-4">
+				<a href="/how-it-works" class="learn">Learn more</a>
+			</div>
+		</div>
+	</section>
+	<section class="devices clearfix">
+		<img class="mobile-image" src="https://d17odppiik753x.cloudfront.net/about-us/2016/phones.png">
+		<div class="page-width clearfix">
+			<span class="column-12 devices-head">
+				<h4>Play when you want. Where you want. On any device.</h4>
+			</span>
+			<div class="column-3 webby">
+				<img src="https://d17odppiik753x.cloudfront.net/images/about-2015/svg/webby.svg">
+				<p><b>2015 Winner</b>
+				<br>Mobile Sites &amp; Apps<br>Sports (Handheld Devices)
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="devices-download clearfix">
+		<div class="page-width clearfix">
+			<div class="column-3">
+				<a class="button primary center" target="_blank" href="https://itunes.apple.com/app/id599664106?mt=8">
+					<img src="https://d17odppiik753x.cloudfront.net/images/about-2015/svg/apple.svg">
+				</a>
+			</div>
+			<div class="column-3">
+				<a class="button primary center" target="_blank" href="https://www.fanduel.com/android">
+					<img src="https://d17odppiik753x.cloudfront.net/images/about-2015/svg/android.svg">
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="devices-awards clearfix">
+		<div class="page-width clearfix">
+			<div class="column-2">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/svg/award-2.svg" />
+			</div>
+			<div class="column-2">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/svg/award-3.svg" />
+			</div>
+			<div class="column-2">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/svg/award-4.svg" />
+			</div>
+			<div class="column-2">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/svg/award-5.svg" />
+			</div>
+			<div class="column-2">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/svg/award-6.svg" />
+			</div>
+			<div class="column-2">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/svg/award-1.svg" />
+			</div>
+		</div>
+	</section>
+	<section class="team clearfix">
+		<div class="page-width clearfix">
+			<h4>Introducing the FanDuel team captains</h4>
+		</div>
+		<div class="page-width">
+			<ul>
+				
+				<li class="column-4 card">
+					<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/pages/about-us/062415MF076_FanDuel_Headshots-pt2.jpg">
+					<div class="card_content">
+						<p><b>Matt King</b></p>
+						<p class="title">CEO</p>
+						<p class="bio">Formerly President of Regional Operations and Corporate Development at ‎Cottingham & Butler and Director at KKR.</p>
+					</div>
+				</li>
+				
+				
+				<li class="column-4 card">
+					<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/team-robin.jpg">
+					<div class="card_content">
+						<p><b>Robin Spira</b></p>
+						<p class="title">CTO</p>
+						<p class="bio">Formerly CTO at Play.com (Acquired by Rakuten) and Chemist Direct</p>
+					</div>
+				</li>
+				
+				
+				<li class="column-4 card">
+					<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/team-christian.jpg">
+					<div class="card_content">
+						<p><b>Christian Genetski</b></p>
+						<p class="title">CLO</p>
+						<p class="bio">Formerly General Counsel of Entertainment Software Assoc., partner at ZwillGen law firm, and prosecutor with U.S. Department of Justice.</p>
+					</div>
+				</li>
+				
+				
+				<li class="column-4 card">
+					<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/team-andy-g.jpg">
+					<div class="card_content">
+						<p><b>Andy Giancamilli</b></p>
+						<p class="title">CFO</p>
+						<p class="bio">Formerly VP of Pricing at Toys R Us.</p>
+					</div>
+				</li>
+				
+				
+				<li class="column-4 card">
+					<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/mike-raffensperger.jpg">
+					<div class="card_content">
+						<p><b>Mike Raffensperger</b></p>
+						<p class="title">CMO</p>
+						<p class="bio">Former Head of Marketing at Amazon and Director at DIRECTV</p>
+					</div>
+				</li>
+				
+				
+				
+				
+				
+			</ul>
+		</div>
+	</section>
+	<section class="numbers clearfix">
+		<div class="page-width">
+			<h4>We’re America’s #1 Sportsbook and the premier mobile sports betting operator in the U.S.</h4>
+				<ul class="clearfix">
+					<li>
+						<h3>12M<sup>+</sup></h3>
+						<p>registered users</p>
+					</li>
+					<li>
+						<h3>40<sup>%</sup></h3>
+						<p>more sports content consumed</p>
+					</li>
+					<li>
+						<h3>60<sup>%</sup></h3>
+						<p>users watch more live games</p>
+					</li>
+					<li>
+						<h3></h3>
+						<p></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="page-width press-quotes">
+			<div class="press-quote">
+				<h4>“Every Sunday is Super Bowl Sunday”</h4>
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/svg/si-logo.svg">
+			</div>
+			<div class="press-quote">
+				<h4>“The numbers of those participating are exploding”</h4>
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/svg/fox-logo.svg">
+			</div>
+			<div class="press-quote">
+				<h4>“Think of it as 'one-night stand' fantasy sports”</h4>
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/svg/tc-logo.svg">
+			</div>
+		</div>
+	</section>
+	<section class="investors clearfix">
+		<div class="page-width clearfix">
+			<div class="column-spacer-1 column-10">
+				<h4>Our board</h4>
+				<p></p>
+			</div>
+		</div>
+		<div class="page-width investor-list">
+			<div class-"column-spacer-1 column-10">
+				<div class="column-3">
+					<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/investor-bachmann.jpg">
+					<p>Andrin Bachmann</p>
+				</div>
+				<div class="column-3">
+					<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/investor-cleland.jpg">
+					<p>Andrew Cleland</p>
+				</div>
+				<div class="column-3">
+					<img src="https://d17odppiik753x.cloudfront.net/images/about-2015/investor-ted-oberwager.jpg">
+					<p>Ted Oberwager</p>
+				</div>
+				<div class="column-3">
+					<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/investor-moens.jpg">
+					<p>Marc Moens</p>
+				</div>
+				<div class="column-3">
+					<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/investor-lasalle.jpg">
+					<p>Michael LaSalle</p>
+				</div>
+				<div class="column-3">
+					<img src="https://d17odppiik753x.cloudfront.net/images/about-2015/investor-resnikoff001.jpg">
+					<p>Alan Resnikoff</p>
+				</div>
+				<div class="column-3">
+					<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/investor-cordella.jpg">
+					<p>Rick Cordella</p>
+				</div>
+				<div class="column-3">
+					<img src="https://s3.amazonaws.com/cdn.fanduel.com/images/about-2015/investor-larocca.jpg">
+					<p>Salvatore LaRocca - Observer</p>
+				</div>
+				<div class="column-3">
+					<img src="">
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div class="advisory-board column-spacer-4 column-4">
+			<h4 class="advisory-board-header">Our Advisory Board</h4>
+			<p>In addition to our Board of Directors, we created an independent Advisory Board, a team of third-party experts from various fields that we turn to for impartial and invaluable counsel.</p>
+			<a href="advisory-board" class="button primary">Meet the Advisory Board</a>
+		</div>
+	</section>
+	<section class="sports clearfix">
+		<div class="page-width clearfix">
+			<div class="icon-header">
+				<h4>Every season is FanDuel season</h4>
+			</div>
+		</div>
+		<div class="page-width clearfix sports-icons">
+			<div class="column-2">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/about-us/2016/football.svg">
+				<p>NFL</p>
+			</div>
+			<div class="column-2">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/about-us/2016/basketball.svg">
+				<p>NBA + WNBA</p>
+			</div>
+			<div class="column-2">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/about-us/2016/baseball.svg">
+				<p>MLB</p>
+			</div>
+			<div class="column-2">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/about-us/2016/hockey.svg">
+				<p>NHL</p>
+			</div>
+			<div class="column-2">
+				<img src="https://s3.amazonaws.com/cdn.fanduel.com/about-us/2016/soccer.svg">
+				<p>EPL + UCL</p>
+			</div>
+			<div class="column-2">
+				<img class="golf-icon" src="https://s3.amazonaws.com/cdn.fanduel.com/about-us/2016/golf2.svg">
+				<p>PGA</p>
+			</div>
+		</div>
+		<div class="column-spacer-4 column-4">
+			<a href="/" class="button primary center">Play Now</a>
+		</div>
+	</section>
+</span>
+
+
+    
+
+    
+	
+<footer>
+	<div class="main-content">
+	  <div class="left box">
+		<h2>About us</h2>
+		<div class="content">
+		  <p>balldraft is an online betting manager situated in making the best out of the soccer game and giving you maximum satisfaction</p>
+		 
+		</div>
+	  </div>
+	  <div class="center box">
+		<h2>Address</h2>
+		<div class="content">
+		  <div class="place">
+			<span class="text"> <a href="./contact.html">Contact us</a>
+		  </div>
+		  <div class="phone">
+		   
+			<span class="text"> <a href="./privacy.html">privacy policy</a>
+		  </div>
+		  <div class="email">
+
+			<span class="text"> <a href="./faq.html">faqs</a>
+			</span>
+		  </div>
+		  <div class="email">
+
+			<span class="text"> <a href="./auth">Register</a>
+			</span>
+		  </div>
+		  
+		</div>
+	  </div>
+	  <div class="right box">
+		<h2>Contact us</h2>
+		<div class="content">
+		  <form action="#">
+			<div class="email">
+			  <div class="text">Email *</div>
+			  <input type="email" required>
+			</div>
+			<div class="msg">
+			  <div class="text">Message *</div>
+			  <textarea rows="2" cols="25" required></textarea>
+			</div>
+			<div class="btn">
+			  <button type="submit">Send</button>
+			</div>
+		  </form>
+		</div>
+	  </div>
+	</div>
+	<div class="bottom">
+	  <center>
+		<span class="far fa-copyright"></span><span> 2023 All rights reserved.</span>
+	  </center>
+	</div>
+  </footer>
+
+
+    
+
+    
+
+    
+	<script>
+		(function() {
+
+			var quotes = $(".press-quote");
+			var quoteIndex = -1;
+
+			function showNextQuote() {
+				++quoteIndex;
+				quotes.eq(quoteIndex % quotes.length)
+					.fadeIn(2000)
+					.delay(2000)
+					.fadeOut(2000, showNextQuote);
+			}
+
+			showNextQuote();
+
+		})();
+	</script>
+	<script type="text/javascript" src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/1d07547c2e04.js"></script>
+
+
+    
+	<script type="text/javascript" src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/e7d377166810.js"></script>
+
+
+    
+
+</body>
+</html>

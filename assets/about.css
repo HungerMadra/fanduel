@@ -1,0 +1,789 @@
+#about-nav {
+    font-weight: bold;
+    background: #0B6ABC
+}
+
+body,
+.body-nfl {
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    background-image: none
+}
+
+.about section {
+    padding: 80px 0;
+    z-index: 1;
+    position: relative
+}
+
+.about section h3 {
+    font-size: 28px
+}
+
+.about section h4 {
+    font-size: 26px;
+    margin-bottom: 80px
+}
+
+.about section h5 {
+    font-size: 22px
+}
+
+.about section p {
+    margin-bottom: 0
+}
+
+.about section ul {
+    list-style: none;
+    margin: 0
+}
+
+.icon-header {
+    text-align: center;
+    margin-bottom: 40px
+}
+
+.divider {
+    border-top: solid 2px #1493FF;
+    display: block;
+    padding-bottom: 80px
+}
+
+section.hero-image {
+    padding: 0;
+    margin-top: 52px;
+    background-image: url(https://d17odppiik753x.cloudfront.net/about-us/2016/hero-image.jpg);
+    background-size: cover
+}
+
+section.hero-image .page-width {
+    padding: 0
+}
+
+.hero-line {
+    padding: 100px
+}
+
+section.history h4 {
+    margin-bottom: 20px;
+    padding-top: 80px
+}
+
+section.history {
+    background: #ffffff;
+    overflow: visible;
+    position: relative;
+    z-index: 3;
+    padding: 0
+}
+
+.history p {
+    padding-bottom: 80px
+}
+
+.history img {
+    position: relative;
+    bottom: -12px;
+    border-radius: 8px;
+    -webkit-box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    transform: rotate(9deg)
+}
+
+section.how-it-works {
+    padding: 0;
+    background: #F5F8FC;
+    text-align: center
+}
+
+section.how-it-works h4 {
+    margin-bottom: 0
+}
+
+.how-it-works {
+    text-align: center
+}
+
+.how-it-works .page-width {
+    padding: 80px 0
+}
+
+.how-it-works .column-4 {
+    padding-top: 40px
+}
+
+.row.column-spacer-4.column-4 {
+    margin-bottom: 0
+}
+
+section.devices {
+    background: #1493FF;
+    color: #ffffff;
+    overflow: visible;
+    position: relative;
+    z-index: 2
+}
+
+.mobile-image {
+    width: 53%;
+    max-width: 800px !important;
+    position: absolute;
+    float: right;
+    right: 0;
+    bottom: -500px;
+    margin-top: -300px
+}
+
+.row.column-spacer-1.column-3.webby {
+    margin-top: -200px
+}
+
+.row.column-spacer-1.column-3.webby {
+    color: #2f4b1c
+}
+
+.row.column-spacer-1.column-3.webby b {
+    color: #ffffff
+}
+
+.webby img {
+    width: 75%
+}
+
+section.devices-download {
+    background: #1493FF;
+    color: #ffffff;
+    z-index: 1
+}
+
+section.devices-awards {
+    background: #0F89F1;
+    color: #ffffff;
+    z-index: 1
+}
+
+section.devices-awards img {
+    width: 100% !important;
+    height: 100% !important
+}
+
+.devices-download a {
+    padding: 10px 20px;
+    border-radius: 4px
+}
+
+.devices-download .button.primary,
+button.primary {
+    background: none;
+    border-color: rgba(0, 0, 0, 0.5)
+}
+
+.devices-download .button.primary:hover,
+button.primary:hover {
+    background-color: #1493FF
+}
+
+.devices-download a img {
+    opacity: 0.5;
+    height: auto !important;
+    width: 100% !important
+}
+
+.about section.devices h4 {
+    color: #ffffff;
+    padding-top: 20px;
+    width: 100%
+}
+
+.devices-head {
+    text-align: left
+}
+
+.press-quotes {
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 40px
+}
+
+.about section.numbers .press-quotes h4 {
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 0
+}
+
+.press-quotes img {
+    height: 50px
+}
+
+.press-quote {
+    display: none
+}
+
+i.press {
+    font-size: 30px;
+    padding-bottom: 40px
+}
+
+i.press:before {
+    content: '';
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding-top: 40px;
+    border-top: solid 2px #5F9834
+}
+
+.team {
+    background: #ffffff;
+    text-align: center
+}
+
+.team ul,
+.team li {
+    position: relative;
+    z-index: 10
+}
+
+.about section.team ul {
+    margin: 1%
+}
+
+.card {
+    overflow: hidden;
+    position: relative;
+    background: #f2f2f2;
+    color: #2d363b;
+    text-align: center;
+    width: 25%;
+    float: none;
+    display: inline-block
+}
+
+li.column-4.card {
+    margin: 1%;
+    padding: 0;
+    line-height: 0
+}
+
+.card:hover .card_content {
+    top: 0;
+    padding-top: 20%
+}
+
+.card img {
+    width: 100% !important;
+    height: 100% !important;
+    z
+}
+
+.card_content {
+    background-color: rgba(31, 51, 91, 0.5);
+    color: #ffffff;
+    position: absolute;
+    top: 78%;
+    width: 100%;
+    padding: 10px 10px 100%;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease
+}
+
+.card_content p {
+    font-size: 14px;
+    line-height: 20px
+}
+
+.card_content b {
+    text-transform: uppercase
+}
+
+.card_content .title {
+    color: #ffffff
+}
+
+p.bio {
+    margin-top: 20px
+}
+
+section.numbers {
+    padding: 160px 0 80px
+}
+
+section.numbers .column-3 {
+    margin-bottom: 80px
+}
+
+section.numbers h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 100;
+    font-weight: bold
+}
+
+.numbers {
+    background: #333333;
+    color: #ffffff;
+    text-align: center
+}
+
+.numbers h4 {
+    color: #ffffff
+}
+
+.numbers sup {
+    position: relative;
+    top: 12px;
+    font-size: 30px
+}
+
+.numbers ul {
+    padding-bottom: 40px
+}
+
+.numbers li {
+    padding: 0 2%;
+    float: left;
+    width: 24%;
+    display: inline-block
+}
+
+.numbers p {
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin: 0;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 12px;
+    border-top: solid 1px #1493FF
+}
+
+.investors {
+    background: #ffffff;
+    text-align: center
+}
+
+.investors .column-4 {
+    text-align: left
+}
+
+section.investors p {
+    margin-bottom: 80px
+}
+
+section.investors .column-4 p {
+    margin-bottom: 40px
+}
+
+section.investors .investor-list p {
+    background: #d8d8d8;
+    font-size: 14px;
+    padding: 2px;
+    margin-top: -7px;
+    margin-bottom: 0
+}
+
+.investor-list img {
+    width: 100%
+}
+
+.investor-list .column-3 {
+    margin-bottom: 2%
+}
+
+.investors .advisory-board {
+    text-align: center
+}
+
+.advisory-board-header {
+    margin-bottom: 20px;
+    margin-top: 40px
+}
+
+section.sports h4 {
+    color: #ffffff
+}
+
+.sports {
+    background: #333;
+    color: #fff;
+    text-align: center
+}
+
+.sports h5 {
+    color: #ffffff
+}
+
+.sports a {
+    max-width: 300px
+}
+
+.sports .column-2 {
+    margin-bottom: 40px
+}
+
+.golf-icon {
+    max-height: 68px
+}
+
+.sports-icons {
+    margin-bottom: 80px
+}
+
+.transparent-bg {
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    border-color: #ffffff
+}
+
+a.transparent-b,
+a.transparent-bg:visited {
+    color: #ffffff
+}
+
+.transparent-bg:hover {
+    background: rgba(150, 150, 150, 0.2)
+}
+
+.animated {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0)
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(-20px)
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(0)
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp
+}
+
+.global-footer {
+    position: relative;
+    z-index: 1
+}
+
+@media (max-width:1300px) {
+    .mobile-image {
+        bottom: -350px
+    }
+}
+
+@media (max-width:910px) {
+    section.expand {
+        padding: 100px 0
+    }
+
+    .history img {
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        bottom: auto;
+        margin-top: 80px
+    }
+
+    .row.column-spacer-1.column-3.webby {
+        margin-top: -50px
+    }
+
+    .mobile-image {
+        bottom: -200px
+    }
+
+    .card_content {
+        top: 74%
+    }
+
+    .card_content .bio {
+        font-size: 12px;
+        line-height: 1.2
+    }
+
+    .card_content p {
+        font-size: 12px
+    }
+}
+
+@media (max-width:900px) {
+    section.numbers h3 {
+        font-size: 40px
+    }
+}
+
+@media (max-width:760px) {
+    .card_content p {
+        font-size: 10px
+    }
+}
+
+@media (max-width:720px) {
+    section.numbers h3 {
+        font-size: 35px
+    }
+
+    .card_content {
+        top: 71%
+    }
+}
+
+@media (max-width:640px) {
+    section.numbers h4 {
+        margin-bottom: 40px
+    }
+
+    section.numbers h3 {
+        font-size: 40px
+    }
+
+    .about section {
+        padding: 10px 0 0
+    }
+
+    .about section h4 {
+        font-size: 18px
+    }
+
+    section.hero-image {
+        padding: 0
+    }
+
+    .hero-line {
+        padding: 40px
+    }
+
+    .about section.history {
+        padding-top: 0
+    }
+
+    .about section.history h4 {
+        margin: 20px 0;
+        padding-top: 0
+    }
+
+    .about section.history p {
+        margin-bottom: 20px
+    }
+
+    .about section.history img {
+        margin: 4% 0 0
+    }
+
+    .history p {
+        padding-bottom: 20px
+    }
+
+    .how-it-works .page-width {
+        padding: 40px 0
+    }
+
+    .how-it-works .column-4 {
+        margin-bottom: 40px
+    }
+
+    .how-it-works .column-4:last-child {
+        margin-bottom: 0
+    }
+
+    .how-it-works .column-spacer-4.column-4 {
+        padding-top: 0
+    }
+
+    .about section.team h4 {
+        margin-bottom: 20px
+    }
+
+    .divider {
+        display: none
+    }
+
+    .mobile-image {
+        bottom: -20px
+    }
+
+    .webby img {
+        width: 40%;
+        margin-top: 100px
+    }
+
+    section.devices {
+        padding-top: 0
+    }
+
+    section.devices-awards .column-2 {
+        width: 48%;
+        margin-bottom: 20px
+    }
+
+    .about section.devices h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        padding-top: 40px
+    }
+
+    .devices-download a {
+        margin-bottom: 20px
+    }
+
+    .devices-download .column-3 {
+        width: 48%
+    }
+
+    section.numbers {
+        padding-top: 40px;
+        padding-bottom: 0px
+    }
+
+    section.numbers .column-3:nth-child(5) {
+        margin-bottom: 0
+    }
+
+    section.numbers .column-3 {
+        width: 48%
+    }
+
+    .numbers p {
+        font-size: 10px;
+        padding: 10px 0
+    }
+
+    .numbers li {
+        width: 50%
+    }
+
+    section.team {
+        padding: 20px 0 40px
+    }
+
+    .team .column-4 {
+        width: 47%
+    }
+
+    .card_content,
+    .card:hover .card_content {
+        top: 79%;
+        bottom: 0;
+        padding: 5px
+    }
+
+    .card_content p {
+        line-height: 14px
+    }
+
+    .card_content b {
+        font-size: 12px
+    }
+
+    .card img:hover {
+        opacity: 1
+    }
+
+    .press-quotes {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        background: #1493FF
+    }
+
+    section.investors {
+        padding: 40px 0
+    }
+
+    section.investors h4 {
+        margin-bottom: 40px
+    }
+
+    section.investors p {
+        margin-bottom: 40px
+    }
+
+    .investor-list .column-3 {
+        margin-bottom: 4%
+    }
+
+    section.sports {
+        padding: 40px 0
+    }
+
+    section.sports h4 {
+        margin-bottom: 40px
+    }
+
+    .sports a {
+        max-width: 80%
+    }
+
+    .sports-icons .column-2 {
+        width: 48%
+    }
+
+    .sports-icons {
+        margin-bottom: 40px
+    }
+}

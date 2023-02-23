@@ -1,0 +1,440 @@
+
+<!doctype html>
+<html lang="en" class="cms_header--logged-out">
+  <head>
+    <meta charset="utf-8">
+
+
+
+
+    <script src="https://www.datadoghq-browser-agent.com/datadog-rum-v3.js"
+      type="text/javascript"></script>
+    <script type="text/javascript">;(function(){var production=window.location.hostname.toLowerCase().includes('.fanduel.com');window.DD_RUM&&window.DD_RUM.init({applicationId:'76c04a48-7352-4b5f-9904-4380f2557f01',clientToken:'pubc86a9b9d1ada5c2a81d19f8b02d829b2',site:'datadoghq.com',service:'cms',env:production?'production':'dev',sampleRate:production?10:0,trackInteractions:false,allowedTracingOrigins:[/https:\/\/.*\.fanduel\.com/]});}());</script>
+    <script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('template', 'subnav');</script>
+    <script type="text/javascript">;(function(FD_USER){const user=localStorage.getItem('FD_USER');try{FD_USER.user=JSON.parse(user);FD_USER.user.is_authenticated=true;window.DD_RUM&&window.DD_RUM.setUser({id:FD_USER.user.id})}catch(e){FD_USER.user={id:'anon',email:'anon',is_authenticated:false,};window.DD_RUM&&window.DD_RUM.removeUser();}})(window.FD_USER||(window.FD_USER={}));</script>
+    <script type="text/javascript">;(function(FD_USER){const root=document.querySelector('html');if(FD_USER.user.is_authenticated){root.classList.add('cms_header--logged-in');root.classList.remove('cms_header--logged-out');const lobbyUrl='/contests';document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-fd-logo-link]').forEach(anchor=>{anchor.href=lobbyUrl;});});}})(window.FD_USER||(window.FD_USER={user:{is_authenticated:false}}));</script><style
+      type="text/css">.cms_header--logged-in .cms-header__show-logged-out{display:none}.cms_header--logged-out .cms-header__show-logged-in{display:none}@media (max-width:915px){.cms_header--logged-in .primary-nav-list{visibility:hidden;position:fixed;top:102px;left:0;right:0;bottom:0}.cms_header--logged-in .logged-out-user .support-menu-block{position:absolute;left:-999em}}</style>
+    <script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('clientSideHomepage', true);</script>
+    <script>
+if (window.location.pathname === '/') {
+	const newLocation = new URL(window.location);
+	newLocation.hash = ''; // We never want to keep the hash information.
+
+	const searchParams = new URLSearchParams(window.location.search);
+	searchParams.forEach((value, key) => {
+		if (key.toLowerCase() === 'invitedby') {
+			newLocation.pathname = '/referral';
+			window.DD_RUM && window.DD_RUM.addAction('homepageRedirected', { 'redirect': true, 'href': newLocation.href });
+			window.location.replace(newLocation.href);
+		}
+	});
+
+	if (FD_USER.user.is_authenticated) {
+		newLocation.pathname = '/contests';
+		newLocation.search = '';
+		window.DD_RUM && window.DD_RUM.addAction('homepageRedirected', { 'redirect': true, 'href': newLocation.href });
+		window.location.replace(newLocation.href);
+	}
+	window.DD_RUM && window.DD_RUM.addAction('homepageRedirected', { 'redirect': false });
+}
+</script>
+    <meta name="google-site-verification"
+      content="7bfPVLres-pmKiWuUbGn657RuKrQAPME6CG5Vkr60LI">
+    <meta property="twitter:account_id" content="4503599629457078" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+      src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/5c67eb5ddc79.js"></script>
+    <script type="text/javascript">;$(document).ready(function(){$(".combo-form-input-group input, .combo-form-input-group select").focus(function(){$(this).parent().addClass("is-active")}).blur(function(){$(this).parent().removeClass("is-active")})
+$(document).ready(function(){$('.tabs').each(function(){var $active;var $content;var $links=$(this).find('a');$active=$links.first().addClass('is-active');$content=$($active.attr('href'));$links.not(':first').each(function(){$($(this).attr('href')).hide();});$(this).on('click','a',function(e){$active.removeClass('is-active');$content.hide();$active=$(this);$content=$($(this).attr('href'));$active.addClass('is-active');$content.show();e.preventDefault();});});});})</script>
+    <script>document.getElementsByTagName('html')[0].className += ' fontloader';</script>
+    <script src="//d2avoc1xjbdrch.cloudfront.net/6.44.2/scripts/fontloader.js"
+      async></script>
+
+
+
+
+
+    <!-- START: Optimizely tracking -->
+    <script src="//cdn.optimizely.com/js/3199410082.js"></script>
+    <!-- END: Optimizely tracking -->
+
+
+    <script type="text/javascript">
+        (function(){
+            
+            var pxId = 'JMCVuBG8';
+            
+
+            window._pxAppId = `PX${pxId}`;
+            var p = document.getElementsByTagName('script')[0],
+                s = document.createElement('script');
+            s.async = 1;
+            s.src = `/${pxId}/init.js`;
+            p.parentNode.insertBefore(s,p);
+        }());
+    </script>
+    <link rel="stylesheet" href="./auth.css">
+    <link rel="stylesheet" href="./assets/footer.css">
+    <title>
+
+      login
+
+    </title>
+
+    <link rel="shortcut icon"
+      href="https://d17odppiik753x.cloudfront.net/images/global/favicon.3eda1c.ico"
+      />
+    <link rel="apple-touch-icon-precomposed"
+      href="https://d17odppiik753x.cloudfront.net/images/global/apple-touch-icon.1cd957.png"
+      />
+    <link rel="apple-touch-icon"
+      href="https://d17odppiik753x.cloudfront.net/images/global/apple-touch-icon.1cd957.png"
+      />
+
+
+
+
+
+    <link rel="canonical" href="https://www.fanduel.com/privacy"/>
+
+
+
+
+    <link rel="stylesheet"
+      href="./assets/desktop.css">
+
+    <style>
+            .row {
+                margin-bottom: 20px;
+            }
+            .row + .row {
+                margin-top: 0;
+            }
+        </style>
+    <link rel="stylesheet"
+      href="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/css/542b4101cb1c.css"
+      type="text/css" />
+
+
+
+
+
+
+
+
+    <style>
+    .column-10 h3 {
+        font-weight: bold;
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    .column-10 {
+        padding-top: 50px;
+    }
+    /* This page is used cross product so hide the DFS specific nav */
+    .primary-nav,
+    .secondary-nav {
+        display: none;
+    }
+</style>
+    <script type="text/javascript"
+      src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/5e95492afa16.js"
+      defer></script>
+
+
+  </head>
+
+  <body id="privacy" class='nfl logged-out ' ontouchstart>
+
+
+
+
+
+    <script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('reactPageHeaderDisabled', true);</script>
+    <!-- Google Tag Manager Data Layer -->
+    <script type="text/javascript">
+	(function(w, l, FD_USER) {
+		w[l] = w[l] || [];
+		w[l].push({
+			userid: FD_USER.user.id,
+			useremail: FD_USER.user.email,
+			product: 'fantasy'
+		});
+	})(window, 'dataLayer', window.FD_USER)
+</script>
+    <!-- End Google Tag Manager Data Layer -->
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe src='//www.googletagmanager.com/ns.html?id=GTM-M8ZL2D' height='0'
+        width='0' style='display:none;visibility:hidden'></iframe>
+    </noscript>
+    <script type="text/javascript">
+	(function(w,d,s,l,i)
+		{w[l]=w[l]||[];
+		w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+		var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+		j.async=true;
+		j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;
+		f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-M8ZL2D');
+</script>
+    <script>window.DD_RUM && window.DD_RUM.addRumGlobalContext('webview', false);</script>
+    <script>window.DD_RUM && window.DD_RUM.addAction('pageHeaderUsed', { 'react': false });</script>
+    <header class="global-header">
+      <nav class="sportsbook-nav" data-role="global-sportsbook-menu">
+        <ul class="sportsbook-nav-list">
+          <li class="sportsbook-nav-item sportsbook-nav-item--fantasy">
+
+            <span>Fantasy</span>
+
+          </li>
+          <li class="sportsbook-nav-item sportsbook-nav-item--sportsbook">
+
+            <a
+              class="sportsbook-anchor"
+              href="./auth.html"
+              target="_blank">
+
+              <span>Register</span>
+
+              <i class="icon new-window-icon">&#x21d7;</i>
+            </a>
+
+          </li>
+          <li class="sportsbook-nav-item sportsbook-nav-item--sportsbook">
+
+            <a
+              class="sportsbook-anchor"
+              href="./contact.html"
+              target="_blank">
+
+              <span>Contact us</span>
+
+              <i class="icon new-window-icon">&#x21d7;</i>
+            </a>
+
+          </li>
+        </ul>
+      </nav>
+      <div class="global-header-container">
+
+
+
+
+        <section class="logo-container">
+          <a href="/" target="_self" class="header-link" data-fd-logo-link>
+            <span class="logo logo-fanduel">FanDuel</span>
+            <span class="logo logo-tagline">The Leader In One-Day Fantasy Sports</span>
+          </a>
+        </section>
+
+
+
+        <nav class="primary-nav cms-header__show-logged-in">
+          <ul class="primary-nav-list" data-role="global-header-menu-content"
+            data-maintab=" " data-renderMode="">
+            <li class="primary-nav-item">
+              <a href="/contests" class="primary-nav-anchor"><span
+                  class="link-text">Lobby</span></a>
+            </li>
+            <li class="primary-nav-item">
+              <a href="/upcoming" class="primary-nav-anchor"><span
+                  class="link-text">Upcoming</span></a>
+            </li>
+            <li class="primary-nav-item">
+              <a href="/live" class="primary-nav-anchor"><span
+                  class="link-text">Live</span></a>
+            </li>
+            <li class="primary-nav-item">
+              <a href="/history" class="primary-nav-anchor"><span
+                  class="link-text">History</span></a>
+            </li>
+            <li class="primary-nav-item">
+              <a href="/leagues" class="primary-nav-anchor"><span
+                  class="link-text">Friends</span></a>
+            </li>
+            <li class="primary-nav-item">
+              <a href="/research" class="primary-nav-anchor"><span
+                  class="link-text">Research</span></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="body__container">
+          <section class="logged-out-user secondary-nav">
+
+            <div class="support-menu-block secondary-nav-item">
+              <a href="/responsibleplay" target="_self" title="Responsible Play"
+                data-ga-category="Acquisition Engagement"
+                data-ga-action="Clicked Link" data-ga-label="Header Responsible
+                Play"><i class="icon responsible-play">&#xe91d;</i></a>
+            </div>
+            <div class="support-menu-block secondary-nav-item">
+              <a href="/support" target="_self" data-ga-category="Acquisition
+                Engagement" data-ga-action="Clicked Link" data-ga-label="Header
+                Support"><i class="icon help" title="Help">&#xe91c;</i></a>
+            </div>
+
+
+            <div class="cms-header__show-logged-out">
+
+              <div class="login-menu-block">
+
+                <a href="/login?source=Header%20Login" target="_self"
+                  class="button mini transparent-bg" data-ga-category="User
+                  Engagement" data-ga-action="Clicked CTA" data-ga-label="Header
+                  Login">Log in</a>
+
+              </div>
+
+
+
+              <div class="join-menu-block">
+                <a href="/join?source_placement=Header&amp;source=privacy"
+                  target="_self" class="button mini primary" title="Join
+                  FanDuel" data-ga-category="Acquisition Engagement"
+                  data-ga-action="Clicked CTA" data-ga-label="Header Join">Join</a>
+              </div>
+
+            </div>
+
+            <div class="cms-header__show-logged-in">
+              <div class="join-menu-block">
+                <a href="/account" target="_self" class="button mini primary">My
+                  Account</a>
+              </div>
+            </div>
+
+          </section>
+        </div>
+
+
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Signup</header>
+        <form action="#">
+          <input type="text" placeholder="Full name" required />
+          <input type="text" placeholder="Email address" required />
+          <input type="password" placeholder="Password" required />
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck">I accept all terms & conditions</label>
+          </div>
+          <input type="submit" value="Signup" />
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form action="#">
+          <input type="text" placeholder="Email address" required />
+          <input type="password" placeholder="Password" required />
+          <a href="#">Forgot password?</a>
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+
+      <script>
+      const wrapper = document.querySelector(".wrapper"),
+        signupHeader = document.querySelector(".signup header"),
+        loginHeader = document.querySelector(".login header");
+
+      loginHeader.addEventListener("click", () => {
+        wrapper.classList.add("active");
+      });
+      signupHeader.addEventListener("click", () => {
+        wrapper.classList.remove("active");
+      });
+    </script>
+    </section>
+
+
+
+
+
+
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>balldraft is an online betting manager situated in making the
+              best out of the soccer game and giving you maximum satisfaction</p>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="text"> <a href="./contact.html">Contact us</a>
+              </div>
+              <div class="phone">
+
+                <span class="text"> <a href="./privacy.html">privacy policy</a>
+                </div>
+                <div class="email">
+
+                  <span class="text"> <a href="./faq.html">faqs</a>
+                  </span>
+                </div>
+                <div class="email">
+
+                  <span class="text"> <a href="./auth">Register</a>
+                  </span>
+                </div>
+
+              </div>
+            </div>
+            <div class="right box">
+              <h2>Contact us</h2>
+              <div class="content">
+                <form action="#">
+                  <div class="email">
+                    <div class="text">Email *</div>
+                    <input type="email" required>
+                  </div>
+                  <div class="msg">
+                    <div class="text">Message *</div>
+                    <textarea rows="2" cols="25" required></textarea>
+                  </div>
+                  <div class="btn">
+                    <button type="submit">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <center>
+              <span class="far fa-copyright"></span><span> 2023 All rights
+                reserved.</span>
+            </center>
+          </div>
+        </footer>
+
+
+
+
+
+
+
+
+        <script type="text/javascript"
+          src="https://d17odppiik753x.cloudfront.net/djangoweb-7777025-b688/cms_cache/js/e7d377166810.js"></script>
+      </body>
+    </html>

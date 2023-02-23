@@ -1,0 +1,244 @@
+section.form_container,
+.page-width {
+  position: relative;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10.24px;
+}
+@media (min-width: 1025px) {
+  .global-footer .page-width {
+    max-width: 100%;
+  }
+}
+
+.body__main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.accordion{
+  max-width: 600px;
+  padding: 0 20px;
+}
+.accordion .parent-tab,
+.accordion .child-tab{
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+}
+.accordion .parent-tab label,
+.accordion .child-tab label{
+  background: #007bff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+.accordion .parent-tab label:hover{
+  background: #006fe6;
+}
+.accordion .parent-tab input:checked ~ label,
+.accordion .child-tab input:checked ~ label{
+  border-radius: 3px 3px 0 0;
+  background: #006fe6;
+}
+.accordion label span{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+.accordion .child-tab label span{
+  font-size: 17px;
+}
+.accordion .parent-tab label .icon{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  color: #007bff;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+.accordion .child-tab label .icon{
+  height: 27px;
+  width: 27px;
+}
+.accordion .parent-tab label .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.accordion .parent-tab input:checked ~ label .icon i:before,
+.child-tab input:checked ~ label .icon i:before{
+  content: '\f068';
+}
+.accordion .parent-tab .content,
+.accordion .child-tab .sub-content{
+  max-height: 0px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.4s ease;
+}
+.accordion .parent-tab input:checked ~ .content,
+.child-tab input:checked ~ .sub-content{
+  max-height: 100vh;
+}
+.accordion .tab-3 input:checked ~ .content{
+  padding: 15px 20px;
+}
+.accordion .parent-tab .content p,
+.child-tab .sub-content p{
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.accordion .child-tab .sub-content p{
+  font-size: 15px;
+}
+.accordion input[type="radio"],
+.accordion input[type="checkbox"]{
+  display: none;
+}
+
+
+.form_container{
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.form_container .text{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form_container form{
+  padding: 30px 0 0 0;
+}
+.form_container form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+.form_container form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+.form_container form .form-row .textarea{
+  height: 70px;
+}
+.form_container .input-data input,
+.form_container .textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.form_container .input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.form_container .input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.form_container .textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.form_container .input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.form_container .textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.form_container .input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.form_container .input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.form_container .input-data input:focus ~ .underline:before,
+.form_container .input-data input:valid ~ .underline:before,
+.form_container .textarea textarea:focus ~ .underline:before,
+.form_container .textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.form_container .submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+.form_container .submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  transition: all 0.4s;
+}
+.form_container .submit-btn .input-data:hover .inner{
+  left: 0;
+}
+.form_container .submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .form_container .form_container .text{
+    font-size: 30px;
+  }
+  .form_container .form_container form{
+    padding: 10px 0 0 0;
+  }
+  .form_container .form_container form .form-row{
+    display: block;
+  }
+  .form_container form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .form_container .submit-btn .input-data{
+    width: 40%!important;
+  }
+}
