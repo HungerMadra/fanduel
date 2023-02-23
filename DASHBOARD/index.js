@@ -184,3 +184,14 @@ entry.classList.remove('entry--active');
 
 
 
+// fading effect
+
+const tab1=document.querySelector('.operations__tab--1');
+const operationContent1=document.querySelector('.operations__content--1');
+
+tab1.addEventListener('click',function(){
+  operationContent1.classList.add('check')
+})
+
+
+
