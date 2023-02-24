@@ -597,14 +597,71 @@ ul{
 }
 
 .live__main--left{
-  width: 70%;
+  width: 60%;
   height: 30vh;
   box-shadow: 2px 2px 5px black;
+  font-size: 1rem;
+  padding: 1rem;
 }
-
+.live__main--left div{
+display: flex;
+flex-flow: column wrap;
+gap: 1rem;
+align-items: center;
+justify-content: center;
+}
 .live__main--right{
-  width: 25%;
+  width: 35%;
   height: 80vh;
   box-shadow: 2px 2px 5px black;
+  display: flex;
+  flex-flow: column wrap;
 }
-   
+
+.live__main--right--top{
+  height:20%;
+  box-shadow: 1px 1px 1px black;
+
+}
+.live__main--right--mid{
+  height: 10%;
+  box-shadow: 1px 1px 1px black;
+
+}
+   .live__main--right--bottom{
+    height: 70%;
+  box-shadow: 1px 1px 1px black;
+  overflow-x: scroll;
+  position: relative;
+   }
+
+   .live__main--right--bottom::before{
+     content: ' ';
+     display: block;
+     background-color: #4bbb7d;
+     height: 100%;
+     width: 3px;
+     position: absolute;
+     right: 0;
+     min-height: 250%;
+     
+   }
+   .live__right--tabs{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    border: 1px solid black;
+    line-height:9rem;
+    }
+
+   .live__profile--img{
+     height:5rem;
+     width: 5rem;
+   }
+
+   .live__profile{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 2rem;
+   }
