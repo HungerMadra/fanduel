@@ -196,11 +196,18 @@ tab1.addEventListener('click', function () {
 
 const elipsisCover = document.querySelector('.ellipsis__cover');
 const live = document.querySelector('.live');
-
+const liveMain=document.querySelector('.live__main');
+const liveSecondary=document.querySelector('.live__secondary');
 
 live.addEventListener('click', function () {
   const liveTimeOut=setTimeout(function () {
+    liveSecondary.classList.add('removelivesec')
+    liveMain.classList.add('display__livemain')
     elipsisCover.classList.add('exit__elipsisLoader')
   }, 2000);
   
 })
+
+
+
+

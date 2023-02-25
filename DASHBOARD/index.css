@@ -129,6 +129,12 @@ ul{
 }
 
 
+.live__secondary{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
   
   
   .btn {
@@ -591,9 +597,16 @@ ul{
 }
 
 .live__main{
+  display: none;
+  
+}
+.display__livemain{
   display: flex;
   justify-content: space-around;
   gap:5;
+}
+.removelivesec{
+  display: none;
 }
 
 .live__main--left{
@@ -602,6 +615,7 @@ ul{
   box-shadow: 2px 2px 5px black;
   font-size: 1rem;
   padding: 1rem;
+  
 }
 .live__main--left div{
 display: flex;
