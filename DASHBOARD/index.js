@@ -204,7 +204,7 @@ live.addEventListener('click', function () {
     liveSecondary.classList.add('removelivesec')
     liveMain.classList.add('display__livemain')
     elipsisCover.classList.add('exit__elipsisLoader')
-  }, 2000);
+  }, 5000);
   
 })
 
