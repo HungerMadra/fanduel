@@ -20,7 +20,7 @@ const btmLists = document.querySelectorAll('.link-text');
 btmLists.forEach(list => {
   list.addEventListener('click', function (e) {
     e.preventDefault();
-    
+
   })
 
 });
@@ -139,23 +139,23 @@ slider();
 
 // upcoming
 
-const entriesDraft=document.querySelectorAll('.entries__drafts li')
+const entriesDraft = document.querySelectorAll('.entries__drafts li')
 
 
 
-entriesDraft.forEach(e=>{
-e.addEventListener('click',function(e){
-  e.preventDefault();
-//  e.target.classList.add('entry--active');
-// console.log(e);
+entriesDraft.forEach(e => {
+  e.addEventListener('click', function (e) {
+    e.preventDefault();
+    //  e.target.classList.add('entry--active');
+    // console.log(e);
 
- 
+
+  })
 })
-})
-const draftDropdown=document.querySelector('.draft__dropdown');
-const entry=document.querySelector('.entry-tab');
-const draft=document.querySelector('.draft-tab');
-const entryDisplayWrapper=document.querySelector('.entries__display--wrapper');
+const draftDropdown = document.querySelector('.draft__dropdown');
+const entry = document.querySelector('.entry-tab');
+const draft = document.querySelector('.draft-tab');
+const entryDisplayWrapper = document.querySelector('.entries__display--wrapper');
 
 entryDisplayWrapper.classList.add('entries__display--active');
 entry.classList.add('entry--active');
@@ -163,21 +163,21 @@ entry.classList.add('entry--active');
 
 
 
-entry.addEventListener('click',function(){
-entryDisplayWrapper.classList.add('entries__display--active');
-draftDropdown.classList.remove('draft__dropdown--active');
-entry.classList.add('entry--active');
-draft.classList.remove('entry--active');
+entry.addEventListener('click', function () {
+  entryDisplayWrapper.classList.add('entries__display--active');
+  draftDropdown.classList.remove('draft__dropdown--active');
+  entry.classList.add('entry--active');
+  draft.classList.remove('entry--active');
 
 })
 
-draft.addEventListener('click',function(){
-    entryDisplayWrapper.classList.remove('entries__display--active')
+draft.addEventListener('click', function () {
+  entryDisplayWrapper.classList.remove('entries__display--active')
 
-draftDropdown.classList.add('draft__dropdown--active')
-entry.classList.remove('entry--active')
-draft.classList.add('entry--active');
-entry.classList.remove('entry--active');
+  draftDropdown.classList.add('draft__dropdown--active')
+  entry.classList.remove('entry--active')
+  draft.classList.add('entry--active');
+  entry.classList.remove('entry--active');
 })
 
 
@@ -186,12 +186,21 @@ entry.classList.remove('entry--active');
 
 // fading effect
 
-const tab1=document.querySelector('.operations__tab--1');
-const operationContent1=document.querySelector('.operations__content--1');
+const tab1 = document.querySelector('.operations__tab--1');
+const operationContent1 = document.querySelector('.operations__content--1');
 
-tab1.addEventListener('click',function(){
+tab1.addEventListener('click', function () {
   operationContent1.classList.add('check')
 })
 
 
+const elipsisCover = document.querySelector('.ellipsis__cover');
+const live = document.querySelector('.live');
 
+
+live.addEventListener('click', function () {
+  const liveTimeOut=setTimeout(function () {
+    elipsisCover.classList.add('exit__elipsisLoader')
+  }, 2000);
+  
+})
