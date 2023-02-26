@@ -35,17 +35,19 @@ header{
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
-    
 }
 
   
-  header a{
+  /* header a{
     color: white;
-}
+} */
 
 .top__nav{
 height: 40%;
 margin: 0;
+}
+.top__nav a{
+  color:white;
 }
 .btm__nav{
     height: 60%;
@@ -171,7 +173,7 @@ ul{
     display: none;
     padding:1rem 1rem 0 1rem;
     /* JUST PRESENTATIONAL */
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     width: 100%;
   }
   .operations__tab{
@@ -373,7 +375,7 @@ ul{
   .slider{
       background-color: rgb(255, 29, 29);
       text-align: center;
-      color: white;
+      /* color: white; */
       height:80vh;
       margin: 0 1rem;
   }
@@ -410,9 +412,9 @@ ul{
     padding: 0;
    justify-items: center;
    width: 60%;
-   position: absolute;
+   position: relative;
    left: 50%;
-   transform: translate(-50%,-50%);
+   transform: translate(-50%,-20%);
    box-shadow: 2px 2px 5px black;
    border-radius: 0.3rem;
   }
@@ -433,8 +435,62 @@ ul{
     display: flex;
     align-items: center;
     gap: 0.2rem;
+    
   }
 
+  .thu__shots--container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+  .thu__shot{
+    /* display: inline-block; */
+   
+   
+  }
+  .thu__shot a{
+    background-color:white;
+    color:#1493ff;
+    padding:0.5rem 1.5rem;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 5px black;
+  }
+  #discover a{
+    background-color: #1493ff;
+    color: white;
+    padding:0.5rem 1.5rem;
+    font-size: 1.2rem;
+  }
+  .new__game{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: #6db9fc;
+    margin-top: 2rem;
+  }
+  .content__text{
+    background-color: blue;
+    display: flex;
+    flex-flow: column wrap;
+    
+  }
+  .playnow{
+    padding:1rem;
+    background-color:#1493ff;
+    color: white;
+  }
+
+  .new__game li {
+    font-size: 1rem;
+  }
+
+.section--1{
+  width: 100%;
+}
 
   /* upcoming */
 
@@ -530,35 +586,7 @@ ul{
     font-size: 1.3rem;
     margin: 0.5rem;
   }
-  /*
-  .main__text--section2 a{
-    color: black;
-  }
-
-  .main__text--section2{
-    display: flex;
-    flex-flow: column wrap;
-  }
-  .main__text--section2--heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column wrap;
-    gap:1rem;
-    height:30vh;
-    background-color: rgb(252, 244, 244);
-  }
-  .main__text--section2--lists{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3rem;
-  }
-  .main__text--section2--lists ul li{
-    margin: 1rem;
-  }
-   */
-
-
+  
    .entry--active{
      border-bottom: 3px solid #1493ff;
     transition: all 0.3s;
@@ -681,9 +709,6 @@ justify-content: center;
    }
 
 
-
-
-
    .ellipsis__cover{
     position: relative;
     height: 5rem;
@@ -763,4 +788,46 @@ justify-content: center;
 }
 .exit__elipsisLoader{
   display: none;
+}
+
+
+/* history */
+.operations__content--4{
+  padding: 0;
+}
+
+.history__lists{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.history__heading{
+  text-align: center;
+  padding: 1rem;
+  border-bottom:1px solid #eee;
+}
+
+.recent{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom:1px solid #eee;
+
+}
+.recent input{
+  /* display: block; */
+}
+.recent .checkbox__entries{
+  display: flex;
+  align-items: center;
+}
+
+.history__ellipsis{
+  background-color:#ddd;
+}
+.recent a{
+  color: #1493ff;
 }

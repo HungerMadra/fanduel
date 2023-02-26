@@ -20,7 +20,7 @@ const btmLists = document.querySelectorAll('.link-text');
 btmLists.forEach(list => {
   list.addEventListener('click', function (e) {
     e.preventDefault();
-
+    
   })
 
 });
