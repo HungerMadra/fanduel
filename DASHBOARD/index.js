@@ -190,7 +190,7 @@ const tab1 = document.querySelector('.operations__tab--1');
 const operationContent1 = document.querySelector('.operations__content--1');
 
 tab1.addEventListener('click', function () {
-  operationContent1.classList.add('check')
+  operationContent1.classList.add('fadein')
 })
 
 
@@ -198,12 +198,31 @@ const elipsisCover = document.querySelector('.ellipsis__cover');
 const live = document.querySelector('.live');
 const liveMain=document.querySelector('.live__main');
 const liveSecondary=document.querySelector('.live__secondary');
+const nbaGameTable= document.querySelector('.NBA__game--table');
+const history=document.querySelector('.history');
+const historyLists=document.querySelector('history__lists');
+
+const ellipsisHistoryLists=document.querySelector('.ellipsis__history--lists');
+// const historyElipsis=documnet.querySelector('.')
+
+
+
+
 
 live.addEventListener('click', function () {
   const liveTimeOut=setTimeout(function () {
-    liveSecondary.classList.add('removelivesec')
-    liveMain.classList.add('display__livemain')
-    elipsisCover.classList.add('exit__elipsisLoader')
+    liveSecondary.classList.add('removelivesec');
+    liveMain.classList.add('display__livemain');
+    elipsisCover.classList.add('exit__elipsisLoader');
+  }, 5000);
+  
+})
+
+history.addEventListener('click', function () {
+  const historyTimeOut=setTimeout(function () {
+    nbaGameTable.classList.add('NBA__game--show');
+    ellipsisHistoryLists.classList.add('remove__history--lists');
+    elipsisCover.classList.add('exit__elipsisLoader');
   }, 5000);
   
 })

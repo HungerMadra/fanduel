@@ -597,7 +597,7 @@ ul{
 }
 
 
-.check{
+.fadein{
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -800,6 +800,11 @@ justify-content: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 2rem;
+}
+
+.remove__history--lists{
+display: none;
 }
 
 .history__heading{
@@ -830,4 +835,62 @@ justify-content: center;
 }
 .recent a{
   color: #1493ff;
+}
+
+/* history NBA game */
+
+.NBA__game--table{
+  display: none;
+  flex-flow: column wrap;
+  width: 100%;
+}
+.NBA__game--show{
+  display: flex;
+}
+.NBA__game--heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.NBA__game--heading div{
+  display: flex;
+  flex-flow: column wrap;
+  /* background-color: red; */
+}
+
+.NBA__game--heading-entries{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background-color: red;
+  border: 1px solid black;
+  /* margin: 3px; */
+  padding: 1rem;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.NBA__game--heading-entries ul{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 1.5rem;
+
+}
+.NBA__entry--1{
+  background-color: #eee;
+}
+.NBA__entry--2{
+  background-color: white;
+}
+
+.NBA__game{
+  background-color: #eee;
+  
+}
+
+.NBA__game button{
+  border: none;
 }
