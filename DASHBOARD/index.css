@@ -326,6 +326,9 @@ ul{
     background-color: white;
     position: relative;
     bottom: 10%;
+    border-radius: 1rem;
+    padding: 2.5rem 1rem 0 1rem;
+    box-shadow: 2px 2px 5px black;
     /* transform: translateY(50%); */
   }
 
@@ -819,7 +822,7 @@ justify-content: center;
   padding: 0;
 }
 
-.history__lists{
+.lists{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -916,4 +919,82 @@ display: none;
 
 .NBA__game button{
   border: none;
+}
+
+.operations__footer{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 2rem;
+  background-color: #eee;
+  padding: 1.5rem;
+}
+.operations__footer ul{
+  padding: 0;
+}
+
+.operations__footer li{
+  list-style-type: none;
+  font-size: 1rem;
+  width: 100%;
+  /* gap: 1rem; */
+}
+
+
+.create__challenge{
+  background-color: #eee;
+  padding: 2rem;
+}
+
+.season__leagues{
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+
+}
+
+.seasonleague{
+  /* display: flex; */
+  height: 16rem;
+  background-color: white;
+  width:47%;
+  position: relative;
+  border-radius: 0.5px;
+}
+.seasonleague button{
+display: block;
+width: 100%;
+position: absolute;
+bottom: 0;
+height: 3rem;
+color: white;
+background-color: red;
+border: 0;
+cursor: pointer;
+}
+
+.seasonleagues__left button{
+background-color: #4bbb7d;
+}
+.seasonleagues__right button{
+background-color: #1493ff;
+
+}
+
+.seasonleague__text{
+  display: flex;
+  flex-flow: column wrap;
+  /* align-items: center; */
+  justify-content: center;
+  height: 13rem;
+  padding-left: 1rem;
+}
+
+
+.friends__mode{
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  padding-top: 0;
 }

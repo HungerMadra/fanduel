@@ -207,8 +207,6 @@ const ellipsisHistoryLists=document.querySelector('.ellipsis__history--lists');
 
 
 
-
-
 live.addEventListener('click', function () {
   const liveTimeOut=setTimeout(function () {
     liveSecondary.classList.add('removelivesec');
@@ -219,14 +217,11 @@ live.addEventListener('click', function () {
 })
 
 history.addEventListener('click', function () {
-  const historyTimeOut=setTimeout(function () {
+  setTimeout(function () {
     nbaGameTable.classList.add('NBA__game--show');
     ellipsisHistoryLists.classList.add('remove__history--lists');
     elipsisCover.classList.add('exit__elipsisLoader');
   }, 5000);
   
 })
-
-
-
 
