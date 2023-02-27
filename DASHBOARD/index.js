@@ -225,3 +225,18 @@ history.addEventListener('click', function () {
   
 })
 
+const mainContest=document.querySelector('.main__context');
+const overlayContest=document.querySelector('.overlay__context');
+const createContest=document.querySelector('.create__contest');
+const overlayContextToggle=document.querySelector('.overlay__context--toggle')
+
+
+createContest.addEventListener('click',function(){
+  overlayContest.classList.add('show__overlay--context')
+});
+
+overlayContextToggle.addEventListener('click',function(){
+  overlayContest.classList.remove('show__overlay--context')
+});
+
+
