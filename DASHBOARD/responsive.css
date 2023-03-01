@@ -1,0 +1,30 @@
+@media (max-width:1030px) {
+    .btm__nav--contents {
+        flex-flow: column-reverse wrap;
+        background-color: #1493ff;
+        align-items: none;
+        justify-content: flex-start;
+    }
+
+    .top__nav,
+    .primary-nav-list__btm {
+        padding-left: 0;
+        padding: 0;
+    }
+    .cash__enquiry{
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+    .primary-nav-list__btm {
+        padding: 0;
+        gap: 0;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .profile__header{
+        justify-content: center;
+    }
+
+}

@@ -231,12 +231,26 @@ const createContest=document.querySelector('.create__contest');
 const overlayContextToggle=document.querySelector('.overlay__context--toggle')
 
 
-createContest.addEventListener('click',function(){
-  overlayContest.classList.add('show__overlay--context')
-});
+// createContest.addEventListener('click',function(){
+//   overlayContest.classList.add('show__overlay--context')
+// });
 
-overlayContextToggle.addEventListener('click',function(){
-  overlayContest.classList.remove('show__overlay--context')
-});
+// overlayContextToggle.addEventListener('click',function(){
+//   overlayContest.classList.remove('show__overlay--context')
+// });
 
 
+
+// upcoming__lobby
+
+const upcomingLobby=document.querySelector('.upcoming__lobby');
+const operationsContent1=document.querySelector('.operations__content--1');
+const operationsContent2=document.querySelector('.operations__content--2');
+
+
+// upcomingLobby.addEventListener('click',function(e){
+//   e.preventDefault();
+//   operationsContent1.classList.remove('operations__content--active');
+//   operationsContent2.classList.add('operations__content--active');
+
+// })

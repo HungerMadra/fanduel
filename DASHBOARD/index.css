@@ -1,4 +1,5 @@
 /* The page is NOT responsive. You can implement responsiveness yourself if you wanna have some fun 😃 */
+@import url('responsive.css');
 
 :root {
   --color-primary: #1f375b;
@@ -17,11 +18,19 @@
 body {
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+}
+.operations{
+  background-color: red;
 }
 
 html {
   box-sizing: border-box;
+  /* overflow-x: hidden; */
+  /* height: 100vh; */
+  width:auto;
+  /* background-color: red; */
+
 }
 
 *,
@@ -39,9 +48,13 @@ header {
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
+  /* max-width: 1000px; */
+  background-color: black;
 }
 
-
+nav{
+  width: 100%;
+}
 /* header a{
     color: white;
 } */
@@ -49,6 +62,7 @@ header {
 .top__nav {
   height: 40%;
   margin: 0;
+  /* width: 100vw; */
 }
 
 .top__nav a {
@@ -57,6 +71,8 @@ header {
 
 .btm__nav {
   height: 60%;
+  /* width: 100vw; */
+
 }
 
 .top__nav {
@@ -124,14 +140,7 @@ ul {
   justify-content: center;
 }
 
-.primary-nav-item .hidden__line {
-  height: 2px;
-  width: 2rem;
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-  visibility: hidden;
-}
+
 
 .primary-nav-list__btm {
   height: 100%;
@@ -176,10 +185,14 @@ p {
 
 /* nav and stickly class at the same time */
 
-
+header{
+  background-color: red;
+  /* width: 100vw; */
+}
 /* OPERATIONS */
 .operations {
-  background-color: #fff;
+  background-color: green;
+  /* width: 100vw; */
 }
 
 
@@ -188,7 +201,7 @@ p {
   padding: 1rem 1rem 0 1rem;
   /* JUST PRESENTATIONAL */
   font-size: 1.2rem;
-  width: 100%;
+  /* width: 100vw; */
 }
 
 .operations__tab {
@@ -662,6 +675,9 @@ background-color: #39b385;
 .live__heading a {
   color: black;
 }
+
+
+
 
 
 .entries__drafts a,
