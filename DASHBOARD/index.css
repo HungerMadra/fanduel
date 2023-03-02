@@ -14,11 +14,15 @@
   --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
+/* *{
+} */
 
 body {
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
+  min-height: 100vh;
+
 }
 .operations{
   background-color: red;
@@ -26,9 +30,9 @@ body {
 
 html {
   box-sizing: border-box;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   /* height: 100vh; */
-  width:auto;
+  /* width:auto; */
   /* background-color: red; */
 
 }
@@ -37,6 +41,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+
 }
 
 * {
@@ -186,19 +191,19 @@ p {
 /* nav and stickly class at the same time */
 
 header{
-  background-color: red;
+  /* background-color: red; */
   /* width: 100vw; */
 }
 /* OPERATIONS */
 .operations {
-  background-color: green;
-  /* width: 100vw; */
+  /* height: 100vh; */
+  /* overflow: hidden; */
 }
 
 
 .operations__content {
   display: none;
-  padding: 1rem 1rem 0 1rem;
+  /* padding: 1rem 1rem 0 1rem; */
   /* JUST PRESENTATIONAL */
   font-size: 1.2rem;
   /* width: 100vw; */
@@ -411,7 +416,7 @@ header{
   border-top: none;
   border-bottom: 1px solid #444;
   text-align: center;
-  padding: 10rem 3rem;
+  /* padding: 10rem 3rem; */
 }
 
 .section--sign-up .section__header {
@@ -425,7 +430,7 @@ header{
 
 .section--sign-up .btn {
   font-size: 1.9rem;
-  padding: 2rem 5rem;
+  /* padding: 2rem 5rem; */
 }
 
 .slider {
@@ -456,11 +461,14 @@ header{
   position: relative;
 }
 
-/* .profile {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.3rem;
-} */
+.profile{
+  color: black;
+  font-weight: 600;
+}
+#profile__name{
+color:#1493ff;
+letter-spacing:1.5px;
+}
 
 .entry {
   display: grid;
@@ -503,10 +511,11 @@ header{
   /* background-color: white; */
 }
 .cash__enquiry a{
-  padding: 0.7rem 1rem;
+  padding: 0.5rem;
   color: white;
   background-color: #4bbb7d;
   border-radius: 0.4rem;
+  font-size: 0.8rem;
 }
 .dollar__logo--flex + ul + li{
   margin-right: 1rem;
@@ -531,16 +540,22 @@ header{
   border-radius: 50%;
 }
 .profile__header{
+  padding-left: 1rem;
+  padding-right: 2rem;
   display: flex;
   justify-content:space-between;
   align-items: center;
+  gap:1rem
 }
 .profile__section {
   padding-left: 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
-  /* justify-content: center; */
+  justify-content: flex-start;
+  font-size: 1rem;
+  color: black;
+  /* font-weight: 700; */
   
 }
 .profile__section p{
@@ -560,13 +575,14 @@ justify-content: center;
   align-items: center;
   gap: 1rem;
   margin-left: 3rem;
+  /* background-color: red; */
 }
 .profile__transaction--2 li a{
-padding:0.5rem 1rem;
+padding:0.5rem;
 /* background-color: #1493ff; */
 border-radius: 0.5rem;
 color: white;
-font-size: 1rem;
+font-size: 0.8rem;
 }
 .addfunds{
 background-color: #39b385;
