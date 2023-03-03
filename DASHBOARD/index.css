@@ -1,5 +1,5 @@
 /* The page is NOT responsive. You can implement responsiveness yourself if you wanna have some fun 😃 */
-@import url('responsive.css');
+/* @import url('responsive.css'); */
 
 :root {
   --color-primary: #1f375b;
@@ -25,7 +25,7 @@ body {
 
 }
 .operations{
-  background-color: red;
+  /* background-color: red; */
 }
 
 html {
@@ -50,13 +50,31 @@ html {
 
 header {
   height: 15vh;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content:start;
   flex-flow: column wrap;
   /* max-width: 1000px; */
-  background-color: black;
+  /* background-color: red; */
+  
 }
-
+/* .toggler{
+  display: none;
+  position: absolute;
+} */
+.toggler__container{
+  display: none;
+  color: white;
+  background-color: #1f375b;
+  height:9vh;
+  position: relative;
+}
+.toggler{
+  position: absolute;
+  right: 1rem;
+  /* top: 0; */
+line-height:9vh;
+}
 nav{
   width: 100%;
 }
@@ -500,7 +518,6 @@ letter-spacing:1.5px;
   display: flex;
   height:9vh;
   align-items: center;
-  background-color: red;
 }
 .cash__enquiry{
   display: flex;
@@ -632,7 +649,7 @@ background-color: #39b385;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 100px;
+  height:20vh;
   background-color: #6db9fc;
   margin-top: 2rem;
 }
@@ -1051,7 +1068,7 @@ background-color: #39b385;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: red;
+  /* background-color: red; */
   border: 1px solid black;
   /* margin: 3px; */
   padding: 1rem;
@@ -1135,7 +1152,7 @@ background-color: #39b385;
   bottom: 0;
   height: 3rem;
   color: white;
-  background-color: red;
+  /* background-color: red; */
   border: 0;
   cursor: pointer;
   border-radius: 0.4rem;

@@ -5,15 +5,18 @@
         align-items: none;
         justify-content: flex-start;
     }
-    .primary-nav-list__btm{
-    border-top: 1px solid #1f375b;
+
+    .primary-nav-list__btm {
+        border-top: 1px solid #1f375b;
     }
+
     .top__nav,
     .primary-nav-list__btm {
         padding-left: 0;
         padding: 0;
     }
-    .cash__enquiry{
+
+    .cash__enquiry {
         justify-content: space-around;
         width: 100%;
     }
@@ -25,52 +28,183 @@
         justify-content: flex-start;
         width: 100%;
     }
-    .profile__header{
+
+    .profile__header {
         justify-content: center;
     }
-    .profile__header{
-        justify-content:center;
-      }
+
+    .profile__header {
+        justify-content: center;
+    }
 
 }
+
 @media (max-width:915px) {
-    .profile__header{
+    .profile__header {
         flex-flow: column wrap;
         padding-left: 0;
-        margin-bottom:1rem;
+        margin-bottom: 1rem;
         padding-left: 1rem;
         padding-right: 2rem;
     }
-    .profile__transaction{
+
+    .profile__transaction {
         display: flex;
         width: 100%;
         align-items: center;
     }
-    .profile__section{
+
+    .profile__section {
         width: 100%;
         padding-left: 0;
         padding-left: 2rem;
-        margin:2rem 0 1rem 0;
+        margin: 2rem 0 1rem 0;
     }
-    .profile__section p{
-        line-height:2;
-      }
 
-      .profile__transaction--1{
+    .profile__section p {
+        line-height: 2;
+    }
+
+    .profile__transaction--1 {
         place-items: center;
         place-content: center;
-      }
+    }
 
 }
 
 
 @media (max-width:730px) {
-    .top__nav,#cash__inquiry{
+
+    header {
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    #toggler__box{
+        display: block;
+    }
+    /* .toggler__container {
+        display: block;
+
+        color: white;
+        background-color: black;
+        height: 9vh;
+        position: relative;
+    } */
+
+    .top__nav,
+    #cash__inquiry {
         display: none;
     }
-    .btm__nav--contents{
-        display: none;
+
+
+    .testimonial {
+        background-color: white;
+        position: relative;
+        bottom: 0;
+        border-radius: 1rem;
+        padding-top: 0rem 0rem 0rem 0rem;
+        /* padding: 2.5rem 1rem 0 1rem; */
+        box-shadow: 2px 2px 5px black;
+        /* transform: translateY(50%); */
     }
-    
-     
+
+    #btm__list {
+        padding: 0;
+        gap: 0;
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+        /* align-items: flex-end; */
+    }
+
+    .profile__section {
+        margin: 2rem 0 1rem 0;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* background-color: green; */
+    }
+    .profile__section p{
+        line-height:2;
+      }
+    .profile__header {
+        margin-bottom: 5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .profile__transaction{
+        flex-flow: column wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        background-color: red;
+        margin-bottom: 5rem;
+    }
+    .profile__transaction--1 {
+        grid-column-gap: 5rem;
+        padding: 0;
+        position: absolute;
+
+    }
+    .operations__content{
+        padding: 0;
+    }
+    .profile__transaction--2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top:4rem;
+
+    }
+   .testimonial h5{
+       font-size:1.5rem;
+   }
+   .testimonial .testimonial__text{
+       font-size:1rem;
+   }
+   .slide{
+      height: 100vh;
+   }
+   .thu__shots--container {
+    width: 100%;
+    align-items: center;
+    /* justify-content: start; */
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  .thu__shot a,#discover a{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.new__game{
+    flex-flow: column wrap;
+}
+}
+@media (max-width:420px) {
+    .thu__shots--container {
+        width: 100%;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 1rem;
+      }
+      .thu__shot a,#discover a{
+        padding: 0.3rem;
+        font-size: 0.8rem;
+    }
+.profile__transaction,#btm__list{
+    font-size: 0.8rem;
+}
+.entry{
+    width: 100%;
+}
 }
